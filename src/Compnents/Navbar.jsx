@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../cropped-fah-1.webp";
+import logo from "../../src/Images/cropped-fah-1.webp";
 import { BiMessageAltEdit } from "react-icons/bi";
 import { HiOutlinePhoneMissedCall } from "react-icons/hi";
 import { IoMdArrowDropdown } from "react-icons/io";
@@ -8,6 +8,10 @@ const navData = [
   {
     Item: "Location",
     nav: "/",
+    subdata: {
+      Item: "",
+      nav:""
+    }
   },
   {
     Item: "Speciality",
@@ -38,7 +42,7 @@ console.log(navData);
 
 const Navbar = () => {
   return (
-    <div className=" box-border flex justify-around py-4 bg-green-600 items-center">
+    <div className=" box-border flex justify-around py-4  items-center">
       <img src={logo} className="" alt="FAH Super Speciality Hospital " />
       {/* navbar   links */}
       <div className=" gap-6 flex text-black">
@@ -50,7 +54,7 @@ const Navbar = () => {
           >
             {" "}
             {item.Item}{" "}
-            <p className=" group-hover:rotate-180 transition-all duration-200">
+            <p className=" group-hover:rotate-180 transition-all duration-600">
               {item.Item !== "Careers" ? <IoMdArrowDropdown /> : ""}{" "}
             </p>
           </a>
@@ -67,7 +71,7 @@ const Navbar = () => {
           {" "}
           <BiMessageAltEdit />{" "}
         </a>
-        <button className=" bg-red-200 flex justify-center items-center gap-2 p-3 rounded-md border border-red-400">
+        <button className=" hover:scale-105 transition-all duration-200 bg-red-200 flex justify-center items-center gap-2 p-3 rounded-md border border-red-400">
           {" "}
           <HiOutlinePhoneMissedCall className=" text-lg" /> Request Call Back
         </button>
