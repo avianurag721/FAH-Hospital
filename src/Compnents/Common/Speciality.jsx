@@ -117,7 +117,7 @@ const specialities = [
   {
     image: cancer,
     speciality: "Cancer Care",
-    nav: "",
+    nav: "/about",
   },
   {
     image: cardiac,
