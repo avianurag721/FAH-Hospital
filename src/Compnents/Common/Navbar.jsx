@@ -3,62 +3,36 @@ import logo from "../../Images/cropped-fah-1.webp";
 import { BiMessageAltEdit } from "react-icons/bi";
 import { HiOutlinePhoneMissedCall } from "react-icons/hi";
 import { IoMdArrowDropdown } from "react-icons/io";
-
-const navData = [
-  {
-    Item: "Location",
-    nav: "/",
-    subdata: {
-      Item: "",
-      nav:""
-    }
-  },
-  {
-    Item: "Speciality",
-    nav: "/",
-  },
-  {
-    Item: "Health Library",
-    nav: "/",
-  },
-  {
-    Item: "Services",
-    nav: "/",
-  },
-  {
-    Item: "International Patients",
-    nav: "/",
-  },
-  {
-    Item: "Careers",
-    nav: "/",
-  },
-  {
-    Item: "Contact Us",
-    nav: "/",
-  },
-];
-console.log(navData);
+import { navData } from "../../Data/NavBarData";
 
 const Navbar = () => {
   return (
-    <div className=" hidden box-border lg:flex justify-around py-4  items-center">
+    <div className=" relative  hidden box-border lg:flex justify-around py-4  items-center">
       <img src={logo} className="" alt="FAH Super Speciality Hospital " />
       {/* navbar   links */}
-      <div className=" gap-6 flex text-black">
+      <div className="  gap-6 flex text-black">
         {" "}
-        {navData.map((item) => (
-          <a
-            className=" flex justify-center items-center gap-1 group py-2"
-            href={item.nav}
-          >
-            {" "}
-            {item.Item}{" "}
-            <p className=" group-hover:rotate-180 transition-all duration-600">
-              {item.Item !== "Careers" ? <IoMdArrowDropdown /> : ""}{" "}
-            </p>
-          </a>
-        ))}{" "}
+        {navData.map((item, index) => (
+          <div key={index} className=" relative">
+            <div className="group flex justify-center items-center gap-1 group py-2">
+              {item.Item}
+              <p className=" group-hover:rotate-180 transition-all duration-600">
+                {item.Item !== "Careers" ? <IoMdArrowDropdown clas /> : ""}
+              </p>
+              <div className="hidden top-10 left-1  bg-red-500 rounded-md group-hover:block absolute">
+                {item?.subdata &&
+                  item?.subdata.map((subItem, index) => {
+                    return (
+                      <p className=" w-20" key={index} href={subItem?.nav}>
+                        {" "}
+                        {subItem?.Item}{" "}
+                      </p>
+                    );
+                  })}
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
 
       {/* right part CTA Buttons  */}
