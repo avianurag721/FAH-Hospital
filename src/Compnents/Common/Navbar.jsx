@@ -23,7 +23,7 @@ const Navbar = () => {
                 {item?.subdata &&
                   item?.subdata.map((subItem, index) => {
                     return (
-                      <p className=" w-20" key={index} href={subItem?.nav}>
+                      <p className=" w-[10rem]" key={index} href={subItem?.nav}>
                         {" "}
                         {subItem?.Item}{" "}
                       </p>
