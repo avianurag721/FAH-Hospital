@@ -149,9 +149,9 @@ const specialities = [
 const Speciality = () => {
   return (
     <div className=" transition-all duration-200 my-14 flex justify-center flex-col lg:flex-row w-full">
-      <div className=" w-[25%]">
+      <div className=" text-center w-[90%] lg:w-[25%]">
         <h3 className=" text-lg">Specialities</h3>
-        <h2 className=" my-8 text-slate-600 text-4xl">
+        <h2 className="  my-8 text-slate-600 text-3xl lg:text-4xl">
           An Ecosystem for Clinical Excellence
         </h2>
       </div>
@@ -185,18 +185,18 @@ const Speciality = () => {
       </div>
 
       {/* alphabets search division/  */}
-      <div className=" w-[30%]  border-l border-2 p-4">
+      <div className=" w-full lg:w-[30%]  border-l border-2 p-0 lg:p-4">
         <h2>Search By</h2>
         <div className=" flex justify-between items-center">
-          <div className=" cursor-pointer rounded-full border  hover:border-red-400 text-white hover:text-black bg-red-400 px-4 p-1">
+          <div className=" cursor-pointer rounded-full border  hover:border-red-400 text-white hover:text-black bg-red-400 px-2 p-1">
             {" "}
             Ailments
           </div>
-          <div className=" cursor-pointer rounded-full border border-black text-black hover:border-red-400   hover:text-white hover:bg-red-400 px-4 p-1">
+          <div className=" cursor-pointer rounded-full border border-black text-black hover:border-red-400   hover:text-white hover:bg-red-400 px-2 p-1">
             {" "}
             Treatments
           </div>
-          <div className=" cursor-pointer rounded-full border border-black  text-black hover:border-red-400 hover:text-white hover:bg-red-400 px-4 p-1">
+          <div className=" cursor-pointer rounded-full border border-black  text-black hover:border-red-400 hover:text-white hover:bg-red-400 px-2 p-1">
             {" "}
             Technologies
           </div>

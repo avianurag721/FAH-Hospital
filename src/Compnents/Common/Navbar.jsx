@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../src/Images/cropped-fah-1.webp";
+import logo from "../../Images/cropped-fah-1.webp";
 import { BiMessageAltEdit } from "react-icons/bi";
 import { HiOutlinePhoneMissedCall } from "react-icons/hi";
 import { IoMdArrowDropdown } from "react-icons/io";
@@ -42,7 +42,7 @@ console.log(navData);
 
 const Navbar = () => {
   return (
-    <div className=" box-border flex justify-around py-4  items-center">
+    <div className=" hidden box-border lg:flex justify-around py-4  items-center">
       <img src={logo} className="" alt="FAH Super Speciality Hospital " />
       {/* navbar   links */}
       <div className=" gap-6 flex text-black">

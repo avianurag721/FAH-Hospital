@@ -57,7 +57,7 @@ const servicesData = [
 
 const ServiceCard = ({ service }) => {
   return (
-    <div className=" transition-all duration-200  w-[90%] lg:w-[25%] min-h-[70vh] rounded-md service-card  bg-white p-4 ">
+    <div className=" transition-all duration-200 hover:shadow shadow-blue-500/50  w-[90vw] lg:w-[25vw] min-h-[70vh] rounded-md service-card  bg-white p-4 ">
       <img className=" rounded-md" src={service.image} alt={service.heading} />
       <div className=" flex flex-col gap-2 w-[90%] my-10 ">
         <h3 className=" my-5 text-2xl font-bold ">{service.heading}</h3>
@@ -80,7 +80,7 @@ const Services = () => {
   return (
     <div className=" flex bg-slate-200 gap-5 flex-col justify-center items-center py-10">
       <h1 className=" font-bold text-2xl "> Services</h1>
-      <div className="  flex gap-5 mx-5 justify-around items-center">
+      <div className="  flex flex-col lg:flex-row gap-5 mx-5 justify-around items-center">
         {servicesData.map((item, index) => (
           <ServiceCard key={index} service={item} />
         ))}
