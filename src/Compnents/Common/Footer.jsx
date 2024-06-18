@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white py-8">
       <div className="container mx-auto">
-        <div className="flex flex-col md:flex-row md:justify-between">
+        <div className="flex flex-col md:flex-row text-center` md:justify-between">
           {FooterData.map((category, index) => {
             const categoryName = Object.keys(category)[0];
             const items = category[categoryName];
