@@ -176,12 +176,12 @@ const Speciality = () => {
             </div>
           );
         })}
-        <p className=" cursor-pointer group w-full lg:w-[40%]  flex pt-16 gap-3 items-center">
+        <div className=" cursor-pointer group w-full lg:w-[40%]  flex pt-16 gap-3 items-center">
           <p>View All Specialities</p>
           <p className=" group-hover:translate-x-4 transition-all duration-300 text-red-600 text-lg">
             <FaArrowCircleRight />
           </p>
-        </p>
+        </div>
       </div>
 
       {/* alphabets search division/  */}
@@ -204,17 +204,16 @@ const Speciality = () => {
         <div className=" flex  my-5 gap-2 flex-wrap">
           {alphabets.map((item, index) => (
             <p className=" cursor-pointer flex justify-center  p-4 w-16 hover:bg-red-400 hover:text-white  rounded-full bg-white border">
-              {" "}
               {item.alphabet}{" "}
             </p>
           ))}
         </div>
-        <p className=" cursor-pointer group w-full lg:w-[60%]  flex  gap-3 items-center">
+        <div className=" cursor-pointer group w-full lg:w-[60%]  flex  gap-3 items-center">
           <p>View All Ailments</p>
           <p className=" group-hover:translate-x-4 transition-all duration-300 text-red-600 text-lg">
             <FaArrowCircleRight />
           </p>
-        </p>
+        </div>
       </div>
     </div>
   );

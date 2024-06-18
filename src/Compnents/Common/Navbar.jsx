@@ -17,7 +17,7 @@ const Navbar = () => {
             <div className="group flex justify-center items-center gap-1 group py-2">
               {item.Item}
               <p className=" group-hover:rotate-180 transition-all duration-600">
-                {item.Item !== "Careers" ? <IoMdArrowDropdown clas /> : ""}
+                {item.Item !== "Careers" ? <IoMdArrowDropdown  /> : ""}
               </p>
               <div className="hidden top-10 left-1  bg-red-500 rounded-md group-hover:block absolute">
                 {item?.subdata &&

@@ -29,7 +29,7 @@ const ToggleData = [
 
 const ConsultToggle = () => {
   return (
-    <div className=" my-4 border-2 lg:mx-16 rounded-md  border-red-500 flex flex-col lg:flex-row justify-around  items-center ">
+    <div className=" my-4 border-2 lg:mx-16 rounded-md bg-white  border-red-500 flex flex-col lg:flex-row justify-between  items-center ">
       {ToggleData.map((item, index) => {
         return (
           <div
