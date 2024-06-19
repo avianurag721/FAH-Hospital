@@ -43,7 +43,7 @@ const ConsultToggle = () => {
             key={index}
             className={`${
               index === 0 ? "bg-red-600" : " bg-white"
-            } cursor-pointer hover:bg-red-600 border-r  py-6 lg:py-6 h-full text-center flex justify-center items-center w-full lg:w-[15rem]`}
+            } cursor-pointer hover:bg-red-600 border-r py-6 lg:py-6 h-full text-center flex justify-center items-center w-full lg:w-[15rem]`}
           >
             <img src={item.image} alt="" />
             <p> {item.Data} </p>

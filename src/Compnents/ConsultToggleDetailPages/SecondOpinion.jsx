@@ -11,17 +11,17 @@ const SecondOpinion = () => {
         className="h-screen bg-cover bg-center flex-col lg:flex-row flex justify-around items-center gap-10"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
-        <h1 className="flex leading-snug w-[90%] lg:w-[20%] text-4xl text-center font-bold ">
+        <h1 className="flex my-5 lg:my-0 leading-snug w-[90%] lg:w-[20%] text-4xl text-center font-bold ">
           Get a Second Opinion From anywhere anytime
         </h1>
         {/* call back request form  this is imported from ../components/forms */}
         <RequestCallBack />
       </div>
-      <div className=" flex p-6 py-10 flex-col lg:flex-row  bg-slate-200 justify-center items-center">
-        <h1 className=" text-4xl w-[40vw] text-center font-bold">
+      <div className="  flex p-6 py-10 flex-col lg:flex-row  bg-slate-200 justify-center items-center">
+        <h1 className=" mt-40 lg:mt-0  text-4xl w-full lg:w-[40vw] text-center font-bold">
           About Second Opinion
         </h1>
-        <div className=" flex h-[40vh] lg:h-[20vh] flex-col items-start px-6 w-[90vw] lg:w-[60vw] ">
+        <div className=" flex h-[60vh] lg:text-left text-justify lg:h-[20vh] flex-col items-start p-2 w-[90vw] lg:w-[60vw] ">
           {showMore ? (
             <p>
               Prioritising your health means understanding all aspects of the

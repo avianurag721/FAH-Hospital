@@ -19,7 +19,7 @@ const Poster1 = () => {
       {/* central text box  */}
       <div className="lg:w-[30%] w-[90%] ">
         <p className=" text-white text-lg">
-          <span className="text-justify">"</span>
+          <span className=" text-justify">"</span>
           At FAH Superspeciality Hospital, our mission is to provide exceptional
           healthcare with compassion and innovation. We are committed to
           advancing medical science, improving patient outcomes, and ensuring

@@ -7,9 +7,9 @@ const RequestCallBack = () => {
             boxShadow:
               "10 4px 65px -5px rgba(107, 114, 128, 0.1), 0 2px 4px -1px rgba(107, 114, 128, 0.06)",
           }}
-          className=" w-[30%] bg-white  flex flex-col gap-8 p-14 rounded-md"
+          className=" w-[90%] lg:w-[30%] bg-white  flex flex-col gap-8 p-14 rounded-md"
         >
-          <h1 className=" text-3xl font-bold "> Request A Callback</h1>
+          <h1 className=" text-3xl font-bold text-center "> Request A Callback</h1>
           <label htmlFor="name" className=" flex flex-col gap-2">
             <span>
               Name <sup className="  text-red-600">*</sup>{" "}

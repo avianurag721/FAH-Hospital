@@ -20,11 +20,11 @@ const Navbar = () => {
               <p className=" group-hover:rotate-180 transition-all duration-600">
                 {item.Item !== "Careers" ? <IoMdArrowDropdown  /> : ""}
               </p>
-              <div className="hidden top-10 left-1  bg-red-500 rounded-md group-hover:block absolute">
+              <div className="hidden top-10 left-1  bg-slate-300 border-2 border-black  group-hover:block absolute">
                 {item?.subdata &&
                   item?.subdata.map((subItem, index) => {
                     return (
-                      <p className=" w-[10rem]" key={index} href={subItem?.nav}>
+                      <p className=" p-2 w-[15rem] hover:bg-red-400 border-b-2 cursor-pointer" key={index} href={subItem?.nav}>
                         {" "}
                         {subItem?.Item}{" "}
                       </p>

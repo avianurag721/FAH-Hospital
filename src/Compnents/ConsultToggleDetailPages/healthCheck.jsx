@@ -17,11 +17,11 @@ const HealthCheck = () => {
         {/* call back request form  this is imported from ../components/forms */}
         <RequestCallBack />
       </div>
-      <div className=" flex p-6 py-10 flex-col lg:flex-row bg-slate-200 justify-center items-center">
-        <h1 className=" text-4xl w-[35vw] text-center font-bold">
+      <div className=" pt-40 lg:pt-0 flex p-6 py-10 flex-col lg:flex-row bg-slate-200 justify-center items-center">
+        <h1 className=" my-4 text-4xl w-full lg:w-[35vw] text-center font-bold">
           About FAH's Preventive Health Program
         </h1>
-        <div className=" flex h-[40vh] lg:h-[25vh] flex-col items-start px-6 w-[90vw] lg:w-[60vw] ">
+        <div className=" flex h-[80vh] lg:h-[25vh] lg:text-left text-justify flex-col items-start px-6 w-[90vw] lg:w-[60vw] ">
           {showMore ? (
             <p>
              At FAH Hospital, we have transformed the traditional health checks from

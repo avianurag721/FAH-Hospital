@@ -18,10 +18,10 @@ const HomeCare = () => {
         <RequestCallBack />
       </div>
       <div className=" flex p-6 py-10 flex-col lg:flex-row bg-slate-200 justify-center items-center">
-        <h1 className=" text-4xl w-[35vw] text-center font-bold">
+        <h1 className=" text-4xl w-full lg:w-[35vw] text-center font-bold">
           About FAH's Home Care
         </h1>
-        <div className=" flex h-[40vh] lg:h-[31vh] flex-col items-start px-6 w-[90vw] lg:w-[60vw] ">
+        <div className=" flex h-[95vh] lg:text-left text-justify lg:h-[31vh] flex-col items-start px-6 w-[90vw] lg:w-[60vw] ">
           {showMore ? (
             <p>
               FAH Hospital Homecare is a trusted partner in promoting well-being,
