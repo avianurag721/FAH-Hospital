@@ -4,11 +4,12 @@ import { BiMessageAltEdit } from "react-icons/bi";
 import { HiOutlinePhoneMissedCall } from "react-icons/hi";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { navData } from "../../Data/NavBarData";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div className=" relative  hidden box-border lg:flex justify-around py-4  items-center">
-      <img src={logo} className="" alt="FAH Super Speciality Hospital " />
+     <Link to="/"> <img src={logo} className="" alt="FAH Super Speciality Hospital " /></Link>
       {/* navbar   links */}
       <div className="  gap-6 flex text-black">
         {" "}

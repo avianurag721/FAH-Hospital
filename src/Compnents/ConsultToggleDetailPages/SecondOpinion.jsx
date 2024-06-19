@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import backgroundImage from "../../Images/doctorsBgImage.jpg";
+import backgroundImage from "../../Images/ToggelBGimages/doctorsBgImage.jpg";
 import RequestCallBack from "../Forms/RequestCallBack";
 import { FaArrowCircleRight } from "react-icons/fa";
 
@@ -8,16 +8,16 @@ const SecondOpinion = () => {
   return (
     <div>
       <div
-        className="h-screen bg-cover bg-center flex justify-center items-center gap-10"
+        className="h-screen bg-cover bg-center flex-col lg:flex-row flex justify-around items-center gap-10"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
-        <h1 className="flex w-[90%] lg:w-[20%] text-4xl text-center font-bold ">
+        <h1 className="flex leading-snug w-[90%] lg:w-[20%] text-4xl text-center font-bold ">
           Get a Second Opinion From anywhere anytime
         </h1>
         {/* call back request form  this is imported from ../components/forms */}
         <RequestCallBack />
       </div>
-      <div className=" flex p-6 py-10  bg-slate-200 justify-center items-center">
+      <div className=" flex p-6 py-10 flex-col lg:flex-row  bg-slate-200 justify-center items-center">
         <h1 className=" text-4xl w-[40vw] text-center font-bold">
           About Second Opinion
         </h1>
@@ -46,7 +46,7 @@ const SecondOpinion = () => {
             onClick={() => setShowMore(!showMore)}
           >
             {showMore ? "Show More" : "Show less"}
-            <FaArrowCircleRight className="  transition-all duration-200  group-hover:translate-x-5"  />
+            <FaArrowCircleRight className="  transition-all duration-200  group-hover:translate-x-5" />
           </button>
         </div>
       </div>

@@ -15,7 +15,7 @@ const ToggleData = [
   {
     image: "",
     Data: "Get Health Checkup",
-    nav: "/book-appointment",
+    nav: "/health-check",
   },
   {
     image: "",
@@ -25,7 +25,7 @@ const ToggleData = [
   {
     image: "",
     Data: "Home Care",
-    nav: "/book-appointment",
+    nav: "/home-care",
   },
   {
     image: "",
