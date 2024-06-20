@@ -1,11 +1,7 @@
 import React from "react";
 import { FaArrowCircleRight } from "react-icons/fa";
-import cancer from "../../Images/section2 imges/cancerCare.jpg";
-import cardiac from "../../Images/section2 imges/cardiacCare.jpg";
-import gastro from "../../Images/section2 imges/gastroscience.jpg";
-import neuro from "../../Images/section2 imges/neuroscience.jpg";
-import ortho from "../../Images/section2 imges/orthopaedic.jpg";
-import renal from "../../Images/section2 imges/renalCare.jpg";
+import { Link } from "react-router-dom";
+import specialities from "../../Data/Specialities"
 
 const alphabets = [
   {
@@ -113,43 +109,12 @@ const alphabets = [
     nav: "",
   },
 ];
-const specialities = [
-  {
-    image: cancer,
-    speciality: "Cancer Care",
-    nav: "/about",
-  },
-  {
-    image: cardiac,
-    speciality: "Cardiac Care",
-    nav: "",
-  },
-  {
-    image: neuro,
-    speciality: "Neurosciences",
-    nav: "",
-  },
-  {
-    image: gastro,
-    speciality: "Gastrosciences",
-    nav: "",
-  },
-  {
-    image: ortho,
-    speciality: "Orthopaedics",
-    nav: "",
-  },
-  {
-    image: renal,
-    speciality: "Renal Care",
-    nav: "",
-  },
-];
+
 
 const Speciality = () => {
   return (
     <div className=" transition-all duration-200 my-14 flex justify-center flex-col lg:flex-row w-full">
-      <div className=" text-center w-[90%] lg:w-[25%]">
+      <div id="services" className=" text-center w-[90%] lg:w-[25%]">
         <h3 className=" text-lg">Specialities</h3>
         <h2 className="  my-8 text-slate-600 text-3xl lg:text-4xl">
           An Ecosystem for Clinical Excellence
@@ -158,9 +123,12 @@ const Speciality = () => {
 
       {/* central section  */}
       <div className="  w-full mx-4  lg:w-[33%] ">
-        {specialities.map((item) => {
+        {specialities.map((item,index) => {
           return (
-            <div className=" group  flex justify-between py-2 border-b border-black w-full">
+            <Link key={index}
+              to={item.nav}
+              className=" group  flex justify-between py-2 border-b border-black w-full"
+            >
               <img
                 className=" bg-transparent "
                 width={50}
@@ -168,12 +136,12 @@ const Speciality = () => {
                 alt="imgg"
               />
               <div className=" group-hover:text-red-600  w-[70%] flex items-center justify-between">
-                <p> {item.speciality} </p>
+                <p> {item.Item} </p>
                 <p className=" group-hover:translate-x-4 transition-all duration-300 pr-5 text-lg">
                   <FaArrowCircleRight />
                 </p>
               </div>
-            </div>
+            </Link>
           );
         })}
         <div className=" cursor-pointer group w-full lg:w-[40%]  flex pt-16 gap-3 items-center">

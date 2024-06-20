@@ -1,3 +1,6 @@
+import NavbarservicesData from "./NavbarServiceData";
+import specialities from "./Specialities";
+
 const navData = [
   // {
   //   Item: "Location",
@@ -12,36 +15,12 @@ const navData = [
   {
     Item: "Speciality",
     nav: "/",
-    subdata: [
-      {
-        Item: "Cardiac Care",
-        nav: "/cardiac-care",
-      },
-      {
-        Item: "Cancer Care",
-        nav: "/cardiac-care",
-      },
-      {
-        Item: "Neurosciences",
-        nav: "/cardiac-care",
-      },
-      {
-        Item: "Gastrosciences",
-        nav: "/cardiac-care",
-      },
-      {
-        Item: "Orthopaedics",
-        nav: "/cardiac-care",
-      },
-      {
-        Item: "Renal Care",
-        nav: "/cardiac-care",
-      },
-    ],
+    subdata: specialities,
   },
   {
     Item: "Services",
     nav: "/",
+    subdata: NavbarservicesData,
   },
   {
     Item: "International Patients",
@@ -72,7 +51,7 @@ const mobileNavData = [
   },
   {
     Item: "Services",
-    nav: "/",
+    nav: "#services",
   },
   {
     Item: "International Patients",

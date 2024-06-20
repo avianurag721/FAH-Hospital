@@ -7,6 +7,12 @@ import SecondOpinion from "./Compnents/ConsultToggleDetailPages/SecondOpinion";
 import HealthCheck from "./Compnents/ConsultToggleDetailPages/healthCheck";
 import HomeCare from "./Compnents/ConsultToggleDetailPages/HomeCare";
 import BookAppoitments from "./Compnents/Common/BookAppoitments";
+import RenalCare from "./Compnents/Specializations/RenalCare";
+import CancerCare from './Compnents/Specializations/CancerCare';
+import CardiacCare from './Compnents/Specializations/CardiacCare';
+import GastroSciences from './Compnents/Specializations/GastroSciences';
+import NeuroSciences from './Compnents/Specializations/NeuroSciences';
+import Orthopaedics from './Compnents/Specializations/OrthoPaedics';
 
 const App = () => {
   return (
@@ -19,6 +25,12 @@ const App = () => {
         <Route path="/health-check" element={<HealthCheck />} />
         <Route path="/home-care" element={<HomeCare />} />
         <Route path="/book-appointment" element={<BookAppoitments />} />
+        <Route path="/renal-care" element={<RenalCare/>} />
+        <Route path="/cancer-care" element={<CancerCare/>} />
+        <Route path="/cardiac-care" element={<CardiacCare/>} />
+        <Route path="/gastrosciences" element={<GastroSciences/>} />
+        <Route path="/neurosciences" element={<NeuroSciences/>} />
+        <Route path="/orthopaedics" element={<Orthopaedics/>} />
       </Routes>
       <Footer />
     </BrowserRouter>
