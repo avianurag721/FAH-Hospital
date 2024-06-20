@@ -1,14 +1,14 @@
 const navData = [
-  {
-    Item: "Location",
-    nav: "/",
-    subdata: [
-      {
-        Item: "",
-        nav: "",
-      },
-    ],
-  },
+  // {
+  //   Item: "Location",
+  //   nav: "/",
+  //   subdata: [
+  //     {
+  //       Item: "",
+  //       nav: "",
+  //     },
+  //   ],
+  // },
   {
     Item: "Speciality",
     nav: "/",

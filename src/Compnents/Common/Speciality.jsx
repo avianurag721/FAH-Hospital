@@ -1,6 +1,6 @@
 import React from "react";
 import { FaArrowCircleRight } from "react-icons/fa";
-import cancer from "../../Images/section2 imges/CancerCare.jpg";
+import cancer from "../../Images/section2 imges/cancerCare.jpg";
 import cardiac from "../../Images/section2 imges/cardiacCare.jpg";
 import gastro from "../../Images/section2 imges/gastroscience.jpg";
 import neuro from "../../Images/section2 imges/neuroscience.jpg";
@@ -157,7 +157,7 @@ const Speciality = () => {
       </div>
 
       {/* central section  */}
-      <div className="  w-full lg:w-[33%] ">
+      <div className="  w-full mx-4  lg:w-[33%] ">
         {specialities.map((item) => {
           return (
             <div className=" group  flex justify-between py-2 border-b border-black w-full">
