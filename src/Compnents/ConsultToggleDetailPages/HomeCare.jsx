@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import backgroundImage from "../../Images/ToggelBGimages/HomeCare.jpg";
 import RequestCallBack from "../Forms/RequestCallBack";
 import { FaArrowCircleRight } from "react-icons/fa";
+import Footer from "../Common/Footer";
 
 const HomeCare = () => {
   const [showMore, setShowMore] = useState(true);
@@ -21,7 +22,7 @@ const HomeCare = () => {
         <h1 className=" text-4xl w-full lg:w-[35vw] text-center font-bold">
           About FAH's Home Care
         </h1>
-        <div className=" flex h-[95vh] lg:text-left text-justify lg:h-[31vh] flex-col items-start px-6 w-[90vw] lg:w-[60vw] ">
+        <div className=" flex h-[95vh] lg:text-left text-center lg:h-[31vh] flex-col justify-center items-start px-6 w-[90vw] lg:w-[60vw] ">
           {showMore ? (
             <p>
               FAH Hospital Homecare is a trusted partner in promoting well-being,
@@ -58,6 +59,7 @@ const HomeCare = () => {
           </button>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

@@ -4,9 +4,9 @@ import FooterLogo from "../../Images/footerLogo.jpg";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-8">
+    <footer className=" w-full bg-gray-800 text-white py-8">
       <div className="container mx-auto">
-        <div className="flex flex-col md:flex-row text-center md:justify-between">
+        <div className="flex flex-col md:flex-row  md:justify-between">
           {FooterData.map((category, index) => {
             const categoryName = Object.keys(category)[0];
             const items = category[categoryName];
@@ -30,7 +30,7 @@ const Footer = () => {
           })}
 
           {/* This is for the fourth column of the footer for contact information */}
-          <div className=" flex flex-col items-center mb-8 md:mb-0 md:w-1/4">
+            <div className=" flex flex-col  mb-8 md:mb-0 md:w-1/4">
             <h4 className="text-xl font-semibold mb-4">Contact Us</h4>
             <a href="https://maps.app.goo.gl/M83NrSM9wLkdh7gw7" className=" my-4">
               Location:- <span  className=" text-red-400">Amrapali Yojna, IIM Road, <br />

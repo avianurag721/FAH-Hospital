@@ -14,30 +14,32 @@ const navData = [
   // },
   {
     Item: "Speciality",
-    nav: "/",
+    // nav: "/",
     subdata: specialities,
   },
+  
   {
     Item: "Services",
-    nav: "/",
+    // nav: "/",
     subdata: NavbarservicesData,
   },
-  {
-    Item: "International Patients",
-    nav: "/",
-  },
+  
 
   {
     Item: "Health Library",
-    nav: "/",
+    // nav: "/",
   },
   {
     Item: "Careers",
     nav: "/",
   },
   {
+    Item: "About Us",
+    // nav: "/",
+  },
+  {
     Item: "Contact Us",
-    nav: "/",
+    nav: "/contact-us",
   },
 ];
 const mobileNavData = [

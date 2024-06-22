@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import backgroundImage from "../../Images/ToggelBGimages/HealthCheck.webp";
 import RequestCallBack from "../Forms/RequestCallBack";
 import { FaArrowCircleRight } from "react-icons/fa";
+import Footer from "../Common/Footer";
 
 const HealthCheck = () => {
   const [showMore, setShowMore] = useState(true);
@@ -17,11 +18,11 @@ const HealthCheck = () => {
         {/* call back request form  this is imported from ../components/forms */}
         <RequestCallBack />
       </div>
-      <div className=" pt-40 lg:pt-0 flex p-6 py-10 flex-col lg:flex-row bg-slate-200 justify-center items-center">
+      <div className=" pt-40 lg:pt-0 flex p-6 flex-col lg:flex-row bg-slate-200 justify-center items-center">
         <h1 className=" my-4 text-4xl w-full lg:w-[35vw] text-center font-bold">
           About FAH's Preventive Health Program
         </h1>
-        <div className=" flex h-[80vh] lg:h-[25vh] lg:text-left text-justify flex-col items-start px-6 w-[90vw] lg:w-[60vw] ">
+        <div className=" flex h-[80vh] lg:h-[25vh] lg:text-left text-justify justify-center flex-col items-start px-6 mt-0 lg:mt-4 w-[90vw] lg:w-[60vw] ">
           {showMore ? (
             <p>
              At FAH Hospital, we have transformed the traditional health checks from
@@ -47,7 +48,7 @@ const HealthCheck = () => {
             </p>
           )}
           <button
-            className=" group flex justify-center items-center gap-4 py-4 text-red-500"
+            className=" group flex justify-center items-center gap-4 py-2 text-red-500"
             onClick={() => setShowMore(!showMore)}
           >
             {showMore ? "Show More" : "Show less"}
@@ -55,6 +56,7 @@ const HealthCheck = () => {
           </button>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

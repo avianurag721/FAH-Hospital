@@ -13,6 +13,7 @@ import CardiacCare from './Compnents/Specializations/CardiacCare';
 import GastroSciences from './Compnents/Specializations/GastroSciences';
 import NeuroSciences from './Compnents/Specializations/NeuroSciences';
 import Orthopaedics from './Compnents/Specializations/OrthoPaedics';
+import ContactUs from "./Compnents/Forms/Contactus";
 
 const App = () => {
   return (
@@ -31,8 +32,9 @@ const App = () => {
         <Route path="/gastrosciences" element={<GastroSciences/>} />
         <Route path="/neurosciences" element={<NeuroSciences/>} />
         <Route path="/orthopaedics" element={<Orthopaedics/>} />
+        <Route path="/contact-us" element={<ContactUs/>} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </BrowserRouter>
   );
 };

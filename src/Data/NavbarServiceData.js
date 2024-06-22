@@ -6,21 +6,29 @@ const NavbarservicesData = [
   },
   {
     Item: "Home Services",
-    nav: "",
+    nav: "/home-care",
     image: "",
   },
-
+  {
+    Item: "Dialysis",
+    nav: "/contact-us",
+    image: "",
+  },
   {
     Item: "Health Check",
-    nav: "",
+    nav: "/health-check",
     image: "",
   },
-
   {
-    Item: "Air Ambulance ",
-    nav: "",
+    Item: "Insurance & TPA ",
+    nav: "/contact-us",
+    image: "",
+  },
+  {
+    Item: "Emergency ",
+    nav: "/contact-us",
     image: "",
   },
 ];
 
-export default NavbarservicesData
+export default NavbarservicesData;

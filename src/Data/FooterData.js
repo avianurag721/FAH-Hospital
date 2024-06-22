@@ -11,8 +11,8 @@ const FooterData = [
         nav: "/appointment",
       },
       {
-        Item: "Treatment",
-        nav: "/treatment",
+        Item: " Treatment",
+        nav: "/ Treatment",
       },
       {
         Item: "Emergency 24*7",
@@ -23,10 +23,6 @@ const FooterData = [
         nav: "/technology",
       },
       {
-        Item: "Patient Testimonials",
-        nav: "/patient-testimonial",
-      },
-      {
         Item: "CPR",
         nav: "/cpr",
       },
@@ -35,12 +31,12 @@ const FooterData = [
   {
     Specialities: [
       {
-        Item: "Cardiac Care",
+        Item: "Cardiac Treatment",
         nav: "/cardiac-care",
       },
       {
-        Item: "Cancer Care",
-        nav: "/cancer care",
+        Item: "Cancer Treatment",
+        nav: "/cancer Treatment",
       },
       {
         Item: "Neuroscience",
@@ -55,7 +51,7 @@ const FooterData = [
         nav: "/ortho",
       },
       {
-        Item: "Renal care",
+        Item: "Renal Treatment",
         nav: "/renal",
       },
       {
@@ -83,16 +79,12 @@ const FooterData = [
   {
     Corporates: [
       {
-        Item: "Help Desk",
+        Item: "Help Center",
         nav: "/cardiac-care",
       },
       {
         Item: "About us",
-        nav: "/cancer care",
-      },
-      {
-        Item: "Blogs",
-        nav: "/neurosciences",
+        nav: "/cancer Treatment",
       },
       {
         Item: "Careers",
@@ -109,10 +101,6 @@ const FooterData = [
       {
         Item: "News & Events",
         nav: "/news-events",
-      },
-      {
-        Item: "Investor Relations",
-        nav: "/cpr",
       },
       {
         Item: "Policies and Forms",

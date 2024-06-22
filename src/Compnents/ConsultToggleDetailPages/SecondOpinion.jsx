@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import backgroundImage from "../../Images/ToggelBGimages/doctorsBgImage.jpg";
 import RequestCallBack from "../Forms/RequestCallBack";
 import { FaArrowCircleRight } from "react-icons/fa";
+import Footer from "../Common/Footer";
 
 const SecondOpinion = () => {
   const [showMore, setShowMore] = useState(true);
@@ -21,7 +22,7 @@ const SecondOpinion = () => {
         <h1 className=" mt-40 lg:mt-0  text-4xl w-full lg:w-[40vw] text-center font-bold">
           About Second Opinion
         </h1>
-        <div className=" flex h-[60vh] lg:text-left text-justify lg:h-[20vh] flex-col items-start p-2 w-[90vw] lg:w-[60vw] ">
+        <div className=" flex h-[60vh] lg:text-left text-justify justify-center lg:h-[20vh] flex-col items-start p-2 w-[90vw] lg:w-[60vw] ">
           {showMore ? (
             <p>
               Prioritising your health means understanding all aspects of the
@@ -50,6 +51,7 @@ const SecondOpinion = () => {
           </button>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };
