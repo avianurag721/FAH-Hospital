@@ -29,8 +29,6 @@ const RequestCallBack = () => {
             <input
               className=" border-b outline-none"
               type="number"
-              min={1}
-              max="10"
               name="contact"
               id="contact"
               placeholder="Enter Your Contact Number"

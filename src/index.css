@@ -11,5 +11,9 @@
 body {
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
-  background-color: #fff;
+  /* background-color: #fff; */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers (Safari, Chrome) */
 }

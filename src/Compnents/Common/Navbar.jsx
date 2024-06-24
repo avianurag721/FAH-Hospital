@@ -50,7 +50,7 @@ const Navbar = () => {
 
       <div className=" flex gap-4  justify-center items-center">
         <a
-          href="/contact"
+          href="/contact-us"
           className=" text-2xl border border-customColor  rounded-md p-4"
         >
           {" "}

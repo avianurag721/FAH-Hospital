@@ -25,7 +25,7 @@ const NavbarservicesData = [
     image: "",
   },
   {
-    Item: "Emergency ",
+    Item: "Emergency 24*7 ",
     nav: "/contact-us",
     image: "",
   },

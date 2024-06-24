@@ -6,7 +6,7 @@ import FahPoster from "../../Images/FahAnniversaryPoster.png";
 const Poster1 = () => {
   return (
     <div  style={{ backgroundImage: `url(${DottedImage})` }}
-      className="bg-cover bg-center bg-red-600 flex justify-center  lg:flex-row flex-col items-center "
+      className="bg-cover bg-center flex justify-center  lg:flex-row flex-col items-center "
     >
       {/* postereImage */}
       <div className="postereImage my-5 lg:my-0 lg:w-[30%] w-[90%] flex justify-center items-center">

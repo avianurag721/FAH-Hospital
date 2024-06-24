@@ -2,10 +2,11 @@ import React from "react";
 
 import { FaArrowCircleRight } from "react-icons/fa";
 import servicesData from "../../Data/ServiceData";
+import { Link } from "react-router-dom";
 
 const ServiceCard = ({ service }) => {
   return (
-    <div className=" transition-all duration-200 hover:shadow shadow-blue-500/50  w-[90vw] lg:w-[22vw] min-h-[70vh] rounded-md service-card  bg-white p-4 ">
+    <div className=" transition-all duration-200 hover:-translate-y-1.5 shadow-blue-500/50  w-[90vw] lg:w-[22vw] min-h-[70vh] rounded-md service-card  bg-white p-4 ">
       <img className=" rounded-md" src={service.image} alt={service.heading} />
       <div className=" flex flex-col gap-2 w-[90%] my-10 ">
         <h3 className=" my-5 text-2xl font-bold ">{service.heading}</h3>
@@ -14,10 +15,11 @@ const ServiceCard = ({ service }) => {
           href={`${service.nav.nav}`}
           className=" group w-full lg:w-[50%]  flex justify-between items-center"
         >
-          <p className=" flex justify-center items-center gap-5  group-hover:text-red-400 ">
+          <Link to={`${service.nav.navlink}`} className=" flex justify-center items-center gap-5  group-hover:text-red-400 ">
             {service.nav.navTitle}{" "}
             <FaArrowCircleRight className=" group-hover:translate-x-5 group-hover:text-red-400 transition-all duration-200 " />
-          </p>
+          </Link>
+          
         </a>
       </div>
     </div>

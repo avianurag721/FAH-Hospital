@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./Compnents/Home/HomePage";
 import Navbar from "./Compnents/Common/Navbar";
 import MobileNavbar from "./Compnents/Common/MobileNavbar";
-import Footer from "./Compnents/Common/Footer";
+// import Footer from "./Compnents/Common/Footer";
 import SecondOpinion from "./Compnents/ConsultToggleDetailPages/SecondOpinion";
 import HealthCheck from "./Compnents/ConsultToggleDetailPages/healthCheck";
 import HomeCare from "./Compnents/ConsultToggleDetailPages/HomeCare";
@@ -14,6 +14,7 @@ import GastroSciences from './Compnents/Specializations/GastroSciences';
 import NeuroSciences from './Compnents/Specializations/NeuroSciences';
 import Orthopaedics from './Compnents/Specializations/OrthoPaedics';
 import ContactUs from "./Compnents/Forms/Contactus";
+import Emergency from "./Compnents/Common/Emergency";
 
 const App = () => {
   return (
@@ -33,6 +34,7 @@ const App = () => {
         <Route path="/neurosciences" element={<NeuroSciences/>} />
         <Route path="/orthopaedics" element={<Orthopaedics/>} />
         <Route path="/contact-us" element={<ContactUs/>} />
+        <Route path="/emergency" element={<Emergency/>} />
       </Routes>
       {/* <Footer /> */}
     </BrowserRouter>
