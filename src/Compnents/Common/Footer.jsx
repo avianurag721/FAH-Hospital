@@ -1,6 +1,7 @@
 import React from "react";
 import FooterData from "../../Data/FooterData";
 import FooterLogo from "../../Images/footerLogo.jpg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -12,7 +13,7 @@ const Footer = () => {
             const items = category[categoryName];
 
             return (
-              <div key={index} className="mb-8 md:mb-0 md:w-1/4">
+              <div key={index} className=" ml-6 mb-8 md:mb-0 md:w-1/4">
                 <h4 className="text-xl font-semibold mb-4">
                   {categoryName.replace(/([A-Z])/g, " $1").trim()}
                 </h4>
@@ -30,7 +31,7 @@ const Footer = () => {
           })}
 
           {/* This is for the fourth column of the footer for contact information */}
-            <div className=" flex flex-col  mb-8 md:mb-0 md:w-1/4">
+            <div className=" flex flex-col mx-auto  mb-8 md:mb-0 md:w-1/4">
             <h4 className="text-xl font-semibold mb-4">Contact Us</h4>
             <a href="https://maps.app.goo.gl/M83NrSM9wLkdh7gw7" className=" my-4">
               Location:- <span  className=" text-red-400">Amrapali Yojna, IIM Road, <br />
@@ -40,6 +41,7 @@ const Footer = () => {
               Call Now: <span className=" text-red-400">+91-8433377712</span>{" "}
             </a>
             <img className=" items-center rounded-full w-[10rem]" src={FooterLogo} alt="FooterLogo" />
+            <Link className=" p-4 hover:bg-headingColor hover:scale-105 transition-all duration-200 bg-customColor rounded-md text-center my-2 w-[20rem]" to="/book-appointment">Book a Consultation</Link>
           </div>
         </div>
       </div>

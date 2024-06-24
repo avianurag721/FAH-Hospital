@@ -80,11 +80,11 @@ const FooterData = [
     Corporates: [
       {
         Item: "Help Center",
-        nav: "/cardiac-care",
+        nav: "/contact-us",
       },
       {
         Item: "About us",
-        nav: "/cancer Treatment",
+        nav: "/about-us",
       },
       {
         Item: "Careers",
