@@ -114,7 +114,7 @@ const Speciality = () => {
   return (
     <div className=" transition-all duration-200 my-14 flex justify-center flex-col lg:flex-row-reverse w-full">
       {/* central section  */}
-      <div className="  w-full mx-4  lg:w-[33%] ">
+      <div className="  w-[98vw] mx-4  lg:w-[33%] ">
         {specialities.map((item, index) => {
           return (
             <Link
