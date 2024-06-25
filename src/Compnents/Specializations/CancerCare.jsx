@@ -2,6 +2,7 @@ import React from "react";
 import cancer from "../../Images/DetailPageSpecialityImages/cancer.png";
 import Services from "../Common/Services";
 import Footer from "../Common/Footer";
+import ConsultToggle from '../Home/ConsultToggle';
 
 const CancerCare = () => {
   return (
@@ -22,6 +23,7 @@ const CancerCare = () => {
           <img className=" w-[90vw] lg:w-[35vw]" src={cancer} alt="cancer" />
         </div>
       </div>
+      <ConsultToggle/>
       <Services />
       <Footer />
     </div>

@@ -2,6 +2,7 @@ import React from "react";
 import gastro from "../../Images/DetailPageSpecialityImages/gastro.png";
 import Services from "../Common/Services";
 import Footer from "../Common/Footer";
+import ConsultToggle from "../Home/ConsultToggle";
 
 const GastroSciences = () => {
   return (
@@ -25,6 +26,7 @@ const GastroSciences = () => {
           <img className=" w-[90vw] lg:w-[35vw]" src={gastro} alt="cardiac" />
         </div>
       </div>
+      <ConsultToggle/>
       <Services />
       <Footer />
     </div>

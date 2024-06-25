@@ -2,6 +2,7 @@ import React from "react";
 import cardiac from "../../Images/DetailPageSpecialityImages/cardiac.png";
 import Services from "../Common/Services";
 import Footer from "../Common/Footer";
+import ConsultToggle from "../Home/ConsultToggle";
 
 const CardiacCare = () => {
   return (
@@ -26,6 +27,7 @@ const CardiacCare = () => {
           <img className=" w-[90vw] lg:w-[35vw]" src={cardiac} alt="cardiac" />
         </div>
       </div>
+      <ConsultToggle/>
       <Services />
       <Footer />
     </div>

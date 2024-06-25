@@ -2,6 +2,7 @@ import React from "react";
 import neuro from "../../Images/DetailPageSpecialityImages/neuro.png";
 import Services from "../Common/Services";
 import Footer from "../Common/Footer";
+import ConsultToggle from "../Home/ConsultToggle";
 
 const NeuroSciences = () => {
   return (
@@ -27,6 +28,7 @@ const NeuroSciences = () => {
           <img className=" w-[90vw] lg:w-[35vw]" src={neuro} alt="cardiac" />
         </div>
       </div>
+      <ConsultToggle/>
       <Services />
       <Footer />
     </div>

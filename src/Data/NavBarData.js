@@ -2,16 +2,10 @@ import NavbarservicesData from "./NavbarServiceData";
 import specialities from "./Specialities";
 
 const navData = [
-  // {
-  //   Item: "Location",
-  //   nav: "/",
-  //   subdata: [
-  //     {
-  //       Item: "",
-  //       nav: "",
-  //     },
-  //   ],
-  // },
+  {
+    Item: "About Us",
+    // nav: "/",
+  },
   {
     Item: "Speciality",
     // nav: "/",
@@ -31,11 +25,7 @@ const navData = [
   },
   {
     Item: "Careers",
-    nav: "/",
-  },
-  {
-    Item: "About Us",
-    // nav: "/",
+    nav: "/career",
   },
   {
     Item: "Contact Us",
@@ -66,7 +56,7 @@ const mobileNavData = [
   },
   {
     Item: "Careers",
-    nav: "/",
+    nav: "/career",
   },
   {
     Item: "Contact Us",

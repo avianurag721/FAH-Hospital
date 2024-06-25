@@ -34,10 +34,7 @@ const FooterData = [
         Item: "Cardiac Treatment",
         nav: "/cardiac-care",
       },
-      {
-        Item: "Cancer Treatment",
-        nav: "/cancer Treatment",
-      },
+      
       {
         Item: "Neuroscience",
         nav: "/neurosciences",
@@ -88,7 +85,7 @@ const FooterData = [
       },
       {
         Item: "Careers",
-        nav: "/careers",
+        nav: "/career",
       },
       {
         Item: "Feedback",
