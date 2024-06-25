@@ -114,13 +114,13 @@ const Speciality = () => {
   return (
     <div className=" transition-all duration-200 my-14 flex justify-center flex-col lg:flex-row-reverse w-full">
       {/* central section  */}
-      <div className="  w-[98vw] mx-4  lg:w-[33%] ">
+      <div className="  w-[95vw] mx-4  lg:w-[33%] ">
         {specialities.map((item, index) => {
           return (
             <Link
               key={index}
               to={item.nav}
-              className=" group  flex justify-between py-2 border-b border-black w-full"
+              className=" group  flex justify-between py-2 border-b border-black w-[95vw] lg:w-full"
             >
               <img
                 className=" bg-transparent "
@@ -128,7 +128,7 @@ const Speciality = () => {
                 src={item.image}
                 alt="imgg"
               />
-              <div className=" group-hover:text-customColor  w-[70%] flex items-center justify-between">
+              <div className=" group-hover:text-customColor  w-[60%] flex items-center justify-between">
                 <p> {item.Item} </p>
                 <p className=" group-hover:translate-x-4 transition-all duration-300 pr-0 lg:pr-5 text-lg">
                   <FaArrowCircleRight />
@@ -137,7 +137,7 @@ const Speciality = () => {
             </Link>
           );
         })}
-        <div className=" cursor-pointer group w-full lg:w-[40%]  flex pt-16 gap-3 items-center">
+        <div className=" cursor-pointer group   flex pt-16 gap-3 items-center">
           <p>View All Specialities</p>
           <p className=" group-hover:translate-x-4 transition-all duration-300 text-customColor text-lg">
             <FaArrowCircleRight />
