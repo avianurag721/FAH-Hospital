@@ -130,7 +130,7 @@ const Speciality = () => {
               />
               <div className=" group-hover:text-customColor  w-[70%] flex items-center justify-between">
                 <p> {item.Item} </p>
-                <p className=" group-hover:translate-x-4 transition-all duration-300 pr-5 text-lg">
+                <p className=" group-hover:translate-x-4 transition-all duration-300 pr-0 lg:pr-5 text-lg">
                   <FaArrowCircleRight />
                 </p>
               </div>
@@ -147,9 +147,9 @@ const Speciality = () => {
       <div id="services" className=" my-auto text-center w-[90%] lg:w-[25%]">
         {/* <h3 className=" text-lg">Specialities</h3> */}
         <p className=" text-justify my-8 text-slate-600 text-lg">
-          At FAH Hospital, our Clinical Care Excellence Center is dedicated
-          to providing top-tier medical services and compassionate patient care.
-          We combine state-of-the-art technology with a highly skilled team of
+          At FAH Hospital, our Clinical Care Excellence Center is dedicated to
+          providing top-tier medical services and compassionate patient care. We
+          combine state-of-the-art technology with a highly skilled team of
           medical professionals to ensure that each patient receives the best
           possible treatment. Our center is designed to offer a seamless and
           comprehensive healthcare experience, from diagnosis to recovery. We
