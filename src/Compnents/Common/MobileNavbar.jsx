@@ -1,6 +1,6 @@
 // src/Navbar.js
 import React, { useState } from "react";
-import MobileLogo from "../../Images/MobileLogo.jpg";
+import MobileLogo from "../../Images/cropped-fah-1.webp";
 import  { mobileNavData } from '../../Data/NavBarData';
 import { Link } from "react-router-dom";
 
@@ -18,7 +18,7 @@ const MobileNavbar = () => {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <Link to="/" className="flex-shrink-0">
-                <img className="h-8 w-10" src={MobileLogo} alt="Logo" />
+                <img className="h-12 w-40" src={MobileLogo} alt="Logo" />
               </Link>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
@@ -102,7 +102,7 @@ const MobileNavbar = () => {
           }`}
           id="mobile-menu"
         >
-          <div className="px-2  pt-2 pb-3 space-y-1 sm:px-3">
+          <div className="px-2  py-2 rounded-full  space-y-1 sm:px-3">
             {mobileNavData.map((item, index) => {
               return (
                 <a key={index}

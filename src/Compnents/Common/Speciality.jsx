@@ -112,7 +112,7 @@ const alphabets = [
 
 const Speciality = () => {
   return (
-    <div className=" transition-all duration-200 my-14 flex justify-center flex-col lg:flex-row-reverse w-full">
+    <div id="speciality" className=" transition-all duration-200 my-14 flex justify-center flex-col lg:flex-row-reverse w-full">
       {/* central section  */}
       <div className="  w-[95vw] mx-4  lg:w-[33%] ">
         {specialities.map((item, index) => {
@@ -144,9 +144,9 @@ const Speciality = () => {
           </p>
         </div>
       </div>
-      <div id="services" className=" my-auto text-center w-[90%] lg:w-[25%]">
+      <div id="services" className=" flex justify-center  text-center w-[100%] lg:w-[25%]">
         {/* <h3 className=" text-lg">Specialities</h3> */}
-        <p className=" text-justify my-8 text-slate-600 text-lg">
+        <p className=" text-ceter my-8 px-2 text-slate-600 text-lg">
           At FAH Hospital, our Clinical Care Excellence Center is dedicated to
           providing top-tier medical services and compassionate patient care. We
           combine state-of-the-art technology with a highly skilled team of
@@ -160,9 +160,9 @@ const Speciality = () => {
         </p>
       </div>
       {/* alphabets search division/  */}
-      <div className=" w-full lg:w-[30%]  border-l border-2 p-0 lg:p-4">
-        <h2>Search By</h2>
-        <div className=" flex justify-between items-center">
+      <div className=" w-full lg:w-[30%] mx- border-l border-2 p-0 lg:p-4">
+        <h2 className=" text-3xl mx-auto">Search By</h2>
+        <div className=" flex justify-around items-center">
           <div className=" cursor-pointer rounded-full border  hover:border-customColor text-white hover:text-black bg-customColor px-2 p-1">
             {" "}
             Ailments
@@ -176,7 +176,7 @@ const Speciality = () => {
             Technologies
           </div>
         </div>
-        <div className=" flex  my-5 gap-2 flex-wrap">
+        <div className=" flex justify-center my-5 gap-1 flex-wrap">
           {alphabets.map((item, index) => (
             <p className=" cursor-pointer flex justify-center  p-4 w-16 hover:bg-customColor hover:text-white  rounded-full bg-white border">
               {item.alphabet}{" "}

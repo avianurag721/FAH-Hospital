@@ -17,15 +17,13 @@ const navData = [
     // nav: "/",
     subdata: NavbarservicesData,
   },
-  
-
-  {
-    Item: "Health Library",
-    // nav: "/",
-  },
   {
     Item: "Careers",
     nav: "/career",
+  },
+  {
+    Item: "Doctors",
+    nav: "/doctors",
   },
   {
     Item: "Contact Us",
@@ -34,33 +32,24 @@ const navData = [
 ];
 const mobileNavData = [
   {
-    Item: "Location",
-    nav: "/",
-  },
-  {
     Item: "Speciality",
-    nav: "/",
+    nav: "#speciality",
   },
   {
     Item: "Services",
     nav: "#services",
   },
   {
-    Item: "International Patients",
-    nav: "/",
-  },
-
-  {
-    Item: "Health Library",
-    nav: "/",
-  },
-  {
     Item: "Careers",
     nav: "/career",
   },
   {
+    Item: "Book a Consultation",
+    nav: "/book-appointment",
+  },
+  {
     Item: "Contact Us",
-    nav: "/",
+    nav: "/contact-us",
   },
 ];
 

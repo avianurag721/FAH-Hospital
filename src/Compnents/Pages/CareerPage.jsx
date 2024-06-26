@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "../Common/Footer";
-import Vacancies from "../Common/Vacancies";
+import Vacancies from "./Vacancies";
 import CareerForm from "../Forms/CareerForm";
 
 const CareerPage = () => {

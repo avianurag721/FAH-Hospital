@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./Compnents/Home/HomePage";
 import Navbar from "./Compnents/Common/Navbar";
-// import MobileNavbar from "./Compnents/Common/MobileNavbar";
+import MobileNavbar from "./Compnents/Common/MobileNavbar";
 import SecondOpinion from "./Compnents/ConsultToggleDetailPages/SecondOpinion";
 import HealthCheck from "./Compnents/ConsultToggleDetailPages/healthCheck";
 import HomeCare from "./Compnents/ConsultToggleDetailPages/HomeCare";
@@ -12,16 +12,17 @@ import GastroSciences from './Compnents/Specializations/GastroSciences';
 import NeuroSciences from './Compnents/Specializations/NeuroSciences';
 import Orthopaedics from './Compnents/Specializations/OrthoPaedics';
 import ContactUs from "./Compnents/Forms/Contactus";
-import Emergency from "./Compnents/Common/Emergency";
+import Emergency from "./Compnents/Pages/Emergency";
 import ConsultationBookingForm from "./Compnents/Forms/ConsultationBookingForm";
-import CareerPage from './Compnents/Common/CareerPage';
+import CareerPage from './Compnents/Pages/CareerPage';
+import AllDoctors from "./Compnents/Pages/AllDoctors";
+import DoctorProfile from "./Compnents/Pages/DoctorProfile";
 
 const App = () => {
   return (
     <BrowserRouter>
        <Navbar />
-      {/* <MobileNavbar /> */} 
-      {/* <Nnavbar/> */}
+      <MobileNavbar /> 
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/second-opinion" element={<SecondOpinion />} />
@@ -37,6 +38,8 @@ const App = () => {
         <Route path="/career" element={<CareerPage />} />
         <Route path="/book-appointment" element={<ConsultationBookingForm/>} />
         <Route path="/emergency" element={<Emergency/>} />
+        <Route path="/doctors" element={<AllDoctors/>} />
+        <Route path="doctors/:id" element={<DoctorProfile/>} />
       </Routes>
     </BrowserRouter>
   );

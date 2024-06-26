@@ -1,7 +1,7 @@
 // src/components/Emergency.js
 import React from "react";
-import Footer from "./Footer";
-import Services from "./Services";
+import Footer from "../Common/Footer";
+import Services from "../Common/Services";
 
 function Emergency() {
   return (

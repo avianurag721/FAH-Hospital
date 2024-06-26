@@ -28,7 +28,7 @@ const ServiceCard = ({ service }) => {
 
 const Services = () => {
   return (
-    <div className="  w-full flex bg-slate-200 gap-3 flex-col justify-center items-center py-10">
+    <div id="services" className="  w-full flex bg-slate-200 gap-3 flex-col justify-center items-center py-10">
       <h1 className=" font-bold text-2xl "> Services</h1>
       <div className="  flex flex-col lg:flex-row gap-3 justify-around items-center">
         {servicesData.map((item, index) => (

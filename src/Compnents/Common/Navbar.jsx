@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="gap-6 flex text-black">
         {navData.map((item, index) => (
           <div key={index} className="relative">
-            {item.Item === "Careers" || item.Item === "Contact Us" ? (
+            {item.Item === "Careers" || item.Item === "Contact Us"|| item.Item === "Doctors" ? (
               <Link
                 to={item.nav}
                 className="flex justify-center items-center gap-1 py-2"
@@ -33,14 +33,14 @@ const Navbar = () => {
                     ""
                   )}
                 </p>
-                <div className="hidden top-10 left-1 w-[12rem] bg-white rounded-md text-slate-600 group-hover:block absolute">
+                <div className="hidden top-10 left-1 w-[12rem] bg-customColor rounded-md text-black group-hover:block absolute">
                   {item?.subdata &&
                     item?.subdata.map((subItem, subIndex) => (
                       <div
                         key={subIndex}
-                        className="flex justify-left gap-2 items-center hover:bg-customColor rounded-md hover:text-white px-4 py-2 border-b"
+                        className="flex justify-left gap-2 items-center bg-customColor rounded-md hover:text-white px-4 py-2 border-b"
                       >
-                        <img src={subItem.image} width={20} alt="" />
+                        <img src={subItem.image} className=" " width={35} alt="" />
                         <a className=" " href={subItem.nav}>
                           {subItem.Item}
                         </a>
