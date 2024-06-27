@@ -12,7 +12,7 @@ const HealthCheckUp = () => {
         className="h-screen bg-cover bg-center flex flex-col lg:flex-row justify-center items-center gap-10"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
-        <h1 className=" leading-relaxed w-[90%] lg:w-[20%] text-4xl text-center font-bold ">
+        <h1 className=" leading-relaxed w-[90%] lg:w-[20%] pt-26 lg:pt-0 text-2xl lg:text-4xl text-center font-bold ">
           India's Only Preventive Health Program lead by best medical experts
         </h1>
         {/* call back request form  this is imported from ../components/forms */}
