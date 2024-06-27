@@ -1,4 +1,6 @@
 import React from "react";
+import { HiOutlinePhoneMissedCall } from "react-icons/hi";
+import { BiMessageAltEdit } from "react-icons/bi";
 import FooterData from "../../Data/FooterData";
 import FooterLogo from "../../Images/footerLogo.jpg";
 import { Link } from "react-router-dom";
@@ -31,17 +33,56 @@ const Footer = () => {
           })}
 
           {/* This is for the fourth column of the footer for contact information */}
-            <div className=" flex flex-col mx-auto  mb-8 md:mb-0 md:w-1/4">
+          <div className=" flex flex-col mx-auto  mb-8 md:mb-0 md:w-1/4">
             <h4 className="text-xl font-semibold mb-4">Contact Us</h4>
-            <a href="https://maps.app.goo.gl/M83NrSM9wLkdh7gw7" className=" my-4">
-              Location:- <span  className=" text-red-400">Amrapali Yojna, IIM Road, <br />
-              Dubagga Lucknow</span>
+            <a
+              href="https://maps.app.goo.gl/M83NrSM9wLkdh7gw7"
+              className=" my-4 group relative"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Location:-{" "}
+              <span className=" text-white">
+                Amrapali Yojna, IIM Road, <br />
+                Dubagga Lucknow
+              </span>
+              <p className=" hidden group-hover:block z-10 rounded-md text-black absolute -top-9 bg-customColor py-1 px-16">
+                {" "}
+                Map Location{" "}
+              </p>
+              <span className="hidden group-hover:block absolute left-1 -top-6 bg-customColor px-4 rotate-45 z-0">
+                .
+              </span>
             </a>
             <a className=" my-4" href="tel:+8433377712 ">
-              Call Now: <span className=" text-red-400">+91-8433377712</span>{" "}
+              Call Now: <span className=" text-white">+91-8433377712</span>{" "}
             </a>
-            <img className=" items-center rounded-full w-[10rem]" src={FooterLogo} alt="FooterLogo" />
-            <Link className=" p-4 hover:bg-headingColor hover:scale-105 transition-all duration-200 bg-customColor rounded-md text-center my-2 w-[20rem]" to="/book-appointment">Book a Consultation</Link>
+            <img
+              className=" hidden lg:block items-center rounded-full w-[10rem]"
+              src={FooterLogo}
+              alt="FooterLogo"
+            />
+            <Link
+              className=" p-4 hover:bg-headingColor hover:scale-105 transition-all duration-200 bg-customColor rounded-md text-center my-2 w-[20rem]"
+              to="/book-appointment"
+            >
+              Book a Consultation
+            </Link>
+            <div className="flex lg:hidden gap-4 justify-center items-center mt-4 lg:mt-0">
+              <Link
+                to="/contact-us"
+                className="text-2xl border border-customColor rounded-md p-3"
+              >
+                <BiMessageAltEdit />
+              </Link>
+              <a
+                href="tel:+8433377712"
+                className="hover:scale-105 transition-all duration-200 text-white bg-customColor flex justify-center items-center gap-2 p-3 rounded-md border border-customColor"
+              >
+                <HiOutlinePhoneMissedCall className="text-lg" /> Request Call
+                Back
+              </a>
+            </div>
           </div>
         </div>
       </div>

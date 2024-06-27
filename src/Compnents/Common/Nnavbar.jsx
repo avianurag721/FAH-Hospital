@@ -100,10 +100,10 @@ const Nnavbar = () => {
       </div>
 
       {/* Right part CTA Buttons */}
-      <div className="flex gap-4 justify-center items-center mt-4 lg:mt-0">
+      <div className="hidden lg:flex gap-4 justify-center items-center mt-4 lg:mt-0">
         <Link
           to="/contact-us"
-          className="text-2xl border border-customColor rounded-md p-4"
+          className="text-2xl border hover:bg-customColor border-customColor rounded-md p-3"
         >
           <BiMessageAltEdit />
         </Link>
