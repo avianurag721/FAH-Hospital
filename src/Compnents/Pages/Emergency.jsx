@@ -2,6 +2,7 @@
 import React from "react";
 import Footer from "../Common/Footer";
 import Services from "../Common/Services";
+import ConsultToggle from "../Home/ConsultToggle";
 
 function Emergency() {
   return (
@@ -18,7 +19,7 @@ function Emergency() {
           <strong>911</strong> immediately.
         </p>
 
-        <div className="flex justify-center flex-col lg:flex-row">
+        <div className="flex justify-around flex-col lg:flex-row">
           {/* left side div  */}
           <div className=" w-full lg:w-[40vw]">
             <div className="mb-8">
@@ -92,11 +93,11 @@ function Emergency() {
             contact us at:
           </p>
           <p className="mt-2 text-gray-700">
-            Phone: <strong>(123) 456-7890</strong>
+            Phone: <strong>+91-8433377712</strong>
             <br />
             Address:{" "}
             <strong>
-              123 FAH Hospital Road, Your City, Your State, Your Zip Code
+              FAH Hospital, Amrapali Yojna, IIM Road, Dubagga Lucknow
             </strong>
           </p>
         </div>
@@ -106,6 +107,7 @@ function Emergency() {
           and their families. Your health and well-being are our top priorities.
         </p>
       </div>
+      <ConsultToggle/>
       <Services />
       <Footer />
     </div>

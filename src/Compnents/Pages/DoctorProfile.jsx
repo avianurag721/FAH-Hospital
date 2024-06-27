@@ -8,9 +8,9 @@ const DoctorProfile = () => {
     <div className=" w-full bg-white min-h-screen">
       <div className="flex justify-center items-center flex-col w-[98%] my-2 lg:my-10 lg:[90%]">
         <h1 className=" text-4xl font-serif my-4">Doctor's profile</h1>
-        <div className="flex justify-center gap-5 ">
+        <div className="flex flex-col lg:flex-row justify-center items-center gap-5 ">
           {/* image of doctor   */}
-          <img src={img2} className=" w-[60%] bg-red-500" alt="" />
+          <img src={img2} className=" w-[90%] lg:w-[60%] bg-red-500" alt="" />
           {/* info of doctor   */}
           <div className=" flex flex-col">
             <div>

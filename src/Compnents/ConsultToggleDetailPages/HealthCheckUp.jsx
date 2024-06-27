@@ -4,7 +4,7 @@ import RequestCallBack from "../Forms/RequestCallBack";
 import { FaArrowCircleRight } from "react-icons/fa";
 import Footer from "../Common/Footer";
 
-const HealthCheck = () => {
+const HealthCheckUp = () => {
   const [showMore, setShowMore] = useState(true);
   return (
     <div>
@@ -61,4 +61,4 @@ const HealthCheck = () => {
   );
 };
 
-export default HealthCheck;
+export default HealthCheckUp;

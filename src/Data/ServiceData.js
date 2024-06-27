@@ -34,7 +34,7 @@ const servicesData = [
       subheading:
         "Take Charge of your well-Being with a health experience customized for you",
       nav: {
-        navlink: "/heath-check",
+        navlink: "/health-check",
         navTitle: "Know More",
       },
       icon: "",

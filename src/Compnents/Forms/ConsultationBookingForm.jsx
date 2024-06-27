@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import Footer from "../Common/Footer";
 import bgImage from "../../Images/ConsultpgBgImage.jpg";
+import ConsultToggle from "../Home/ConsultToggle";
+import Services from "../Common/Services";
 
 const ConsultationBookingForm = () => {
   const [formData, setFormData] = useState({
@@ -351,6 +353,8 @@ const ConsultationBookingForm = () => {
           </button>
         </form>
       </div>
+      <Services/>
+      <ConsultToggle />
       <Footer />
     </div>
   );
