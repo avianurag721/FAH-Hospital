@@ -68,7 +68,7 @@ const Footer = () => {
             >
               Book a Consultation
             </Link>
-            <div className="flex lg:hidden gap-4 justify-center items-center mt-4 lg:mt-0">
+            <div className="flex lg:hidden gap-4 justify-between items-center mt-4 lg:mt-0">
               <Link
                 to="/contact-us"
                 className="text-2xl border border-customColor rounded-md p-3"
