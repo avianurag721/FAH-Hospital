@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import logo from "../../Images/cropped-fah-1.webp";
 import { BiMessageAltEdit } from "react-icons/bi";
 import { HiOutlinePhoneMissedCall } from "react-icons/hi";
@@ -10,13 +10,36 @@ import { FiMenu, FiX } from "react-icons/fi";
 const Nnavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
+  const navbarRef = useRef(null);
 
   const toggleDropdown = (index) => {
     setOpenDropdown(openDropdown === index ? null : index);
   };
 
+  const handleClickOutside = (event) => {
+    if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+      setIsOpen(false);
+      setOpenDropdown(null);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  const handleLinkClick = () => {
+    setIsOpen(false);
+    setOpenDropdown(null);
+  };
+
   return (
-    <div className="relative flex flex-col lg:flex-row justify-between p-4 items-center box-border">
+    <div
+      ref={navbarRef}
+      className="relative flex flex-col lg:flex-row justify-between p-4 items-center box-border"
+    >
       {/* Logo and Menu Button */}
       <div className="flex justify-between w-full lg:w-auto px-4 lg:px-0">
         <Link to="/">
@@ -52,6 +75,7 @@ const Nnavbar = () => {
               <Link
                 to={item.nav}
                 className="flex justify-center items-center gap-1 py-2"
+                onClick={handleLinkClick}
               >
                 {item.Item}
               </Link>
@@ -75,7 +99,11 @@ const Nnavbar = () => {
                     className="flex justify-left gap-2 items-center bg-white rounded-md hover:text-white px-4 py-2 border-b"
                   >
                     <img src={subItem.image} className=" " width={35} alt="" />
-                    <a className=" " href={subItem.nav}>
+                    <a
+                      className=" "
+                      href={subItem.nav}
+                      onClick={handleLinkClick}
+                    >
                       {subItem.Item}
                     </a>
                   </div>
@@ -89,7 +117,11 @@ const Nnavbar = () => {
                     className="flex justify-left gap-2 items-center bg-white hover:bg-slate-300 rounded-md hover:text-white px-4 py-2 border-b"
                   >
                     <img src={subItem.image} className=" " width={35} alt="" />
-                    <a className=" " href={subItem.nav}>
+                    <a
+                      className=" "
+                      href={subItem.nav}
+                      onClick={handleLinkClick}
+                    >
                       {subItem.Item}
                     </a>
                   </div>

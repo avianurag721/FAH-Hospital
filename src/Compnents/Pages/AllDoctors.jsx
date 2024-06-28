@@ -85,15 +85,15 @@ const AllDoctors = () => {
             {doctor.Specialization ? doctor.Specialization : "NA"}
           </p>
         </div>
-        <div className=" flex justify-around w-[90%] my-2 ">
+        <div className=" flex gap-2 lg:gap-0 flex-col lg:flex-row justify-around w-[90%] my-2 ">
           <Link
             to={`${doctor.id}`}
-            className="bg-customColor hover:text-black  hover:bg-lightCustomColor text-white px-4 py-2 rounded-md"
+            className="bg-customColor text-center hover:text-black  hover:bg-lightCustomColor text-white px-4 py-2 rounded-md"
           >
             View Profile
           </Link>
           <Link
-            className="bg-customColor hover:text-black  hover:bg-lightCustomColor text-white px-4 py-2 rounded-md"
+            className="bg-customColor text-center hover:text-black  hover:bg-lightCustomColor text-white px-4 py-2 rounded-md"
             to="/book-appointment"
           >
             Book Appointment
@@ -112,7 +112,7 @@ const AllDoctors = () => {
           <DoctorsCard key={index} doctor={doctor} />
         ))}
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
