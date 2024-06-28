@@ -75,7 +75,7 @@ const Nnavbar = () => {
               <Link
                 to={item.nav}
                 className="flex justify-center items-center gap-1 py-2"
-                onClick={handleLinkClick}
+                // onClick={handleLinkClick}
               >
                 {item.Item}
               </Link>
@@ -102,7 +102,7 @@ const Nnavbar = () => {
                     <a
                       className=" "
                       href={subItem.nav}
-                      onClick={handleLinkClick}
+                      // onClick={handleLinkClick}
                     >
                       {subItem.Item}
                     </a>
@@ -120,7 +120,7 @@ const Nnavbar = () => {
                     <a
                       className=" "
                       href={subItem.nav}
-                      onClick={handleLinkClick}
+                      // onClick={handleLinkClick}
                     >
                       {subItem.Item}
                     </a>

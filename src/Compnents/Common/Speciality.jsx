@@ -120,7 +120,7 @@ const Speciality = () => {
             <Link
               key={index}
               to={item.nav}
-              className=" group  flex justify-between py-2 border-b border-black w-[95vw] lg:w-full"
+              className=" group  flex justify-around lg:justify-between py-2 border-b border-black w-[95vw] lg:w-full"
             >
               <img
                 className=" bg-transparent "

@@ -12,7 +12,7 @@ const CardiacCare = () => {
         experts
       </h1>
       <div className=" font-serif w-[90vw] gap-2 flex  flex-col lg:flex-row justify-around items-center">
-        <p className=" w-[90vw] lg:w-[40vw] text-center text-3xl">
+        <p className=" w-[90vw] lg:w-[40vw] text-center text-lg lg:text-2xl">
           At FAH Hospital, we are dedicated to providing the highest quality
           cardiac care through a patient-centered approach that prioritizes
           compassion and innovation. Our multidisciplinary team, consisting of

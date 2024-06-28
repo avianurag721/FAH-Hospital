@@ -11,7 +11,7 @@ const CancerCare = () => {
         Empowering Hope Through Personalized Cancer Care By best medical experts
       </h1>
       <div className=" font-serif w-[90vw] gap-2 flex  flex-col lg:flex-row justify-around items-center">
-        <p className=" w-[90vw] lg:w-[40vw] text-justify text-3xl">
+        <p className=" w-[90vw] lg:w-[40vw] text-justify text-lg lg:text-2xl">
           At FAH Hospital, we are dedicated to providing the highest quality
           cancer care through a patient-centered approach that prioritizes
           compassion and innovation. Our multidisciplinary team of oncologists,
