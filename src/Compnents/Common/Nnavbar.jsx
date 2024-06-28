@@ -94,37 +94,37 @@ const Nnavbar = () => {
             >
               {item?.subdata &&
                 item?.subdata.map((subItem, subIndex) => (
-                  <div
+                  <Link to={subItem.nav}
                     key={subIndex}
                     className="flex justify-left gap-2 items-center bg-white rounded-md hover:text-white px-4 py-2 border-b"
                   >
                     <img src={subItem.image} className=" " width={35} alt="" />
-                    <a
+                    <p
                       className=" "
-                      href={subItem.nav}
-                      // onClick={handleLinkClick}
+                      // href={subItem.nav}`
+                      onClick={handleLinkClick}
                     >
                       {subItem.Item}
-                    </a>
-                  </div>
+                    </p>
+                  </Link>
                 ))}
             </div>
             <div className="hidden lg:group-hover:block absolute top-10 left-1 w-[13rem] bg-white rounded-md text-black">
               {item?.subdata &&
                 item?.subdata.map((subItem, subIndex) => (
-                  <div
+                  <Link to={subItem.nav}
                     key={subIndex}
                     className="flex justify-left gap-2 items-center bg-white hover:bg-slate-300 rounded-md hover:text-white px-4 py-2 border-b"
                   >
                     <img src={subItem.image} className=" " width={35} alt="" />
-                    <a
+                    <p
                       className=" "
-                      href={subItem.nav}
-                      // onClick={handleLinkClick}
+                      // href={subItem.nav}
+                      onClick={handleLinkClick}
                     >
                       {subItem.Item}
-                    </a>
-                  </div>
+                    </p>
+                  </Link>
                 ))}
             </div>
           </div>
