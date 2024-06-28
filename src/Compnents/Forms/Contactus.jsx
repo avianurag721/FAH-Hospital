@@ -31,18 +31,18 @@ const ContactUs = () => {
         style={{ backgroundImage: `url(${contactUsbackground})` }}
         className="  box-border bg-cover gap-10 p-6 lg:p-0 flex flex-col lg:flex-row justify-around items-center min-h-screen bg-gray-100"
       >
-        <div className=" h-[45vh] lg:h-[65vh]  flex flex-col rounded-lg   bg-white border-2 shadow-lg">
-          <h1 className=" px-2 text-center text-3xl font-bold font-serif my-6">
+        <div className=" h-[45vh] lg:h-[70vh]  flex flex-col rounded-lg   bg-white border-2 shadow-lg">
+          <h1 className=" px-2 text-center text-3xl font-bold font-serif my-2">
             Get in touch With us
           </h1>
           <div className="px-2 flex flex-col ">
             <p className=" text-red-900 font-bold text-xl">Address:</p>
-            <p className=" py-2">
+            <p className=" py-1">
               FAH Super Speciality Hospital, IIM Road, Amrapali Yojna
-              <br /> Dubagga, Lucknow.
+              <br /> Dubagga, Lucknow1 %{" "}
             </p>
           </div>
-          <div className="px-2 flex flex-col my-6 ">
+          <div className="px-2 flex flex-col my-2 ">
             <h1 className=" text-red-900 font-bold text-xl">Contact Info:</h1>
             <div className=" flex items-center gap-2 font-bold">
               <MdAddIcCall /> <a href="tel:+918433377712"> +91-8433377712 </a>{" "}
@@ -51,6 +51,15 @@ const ContactUs = () => {
               <BiSolidMessageDetail /> <a href="tel:+918433377712"> E-mail</a>{" "}
             </div>
           </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.387079286235!2d80.8572926!3d26.8912079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bff1d29a904bd%3A0x9714e343f9bb2317!2sFAH%20Super%20Speciality%20Hospital!5e0!3m2!1sen!2sin!4v1719577138131!5m2!1sen!2sin"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
         <form
           className="w-full max-w-lg bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
