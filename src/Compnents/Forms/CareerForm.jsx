@@ -103,8 +103,8 @@ const CareerForm = () => {
   };
 
   return (
-    <div className=" w-[98vw] lg:w-[40vw]  justify-center items-center bg-white p-8 m-4 lg:m-6 shadow-md rounded-md">
-      <h2 className="text-2xl font-bold mb-4  text-amber-800">Apply online</h2>
+    <div className=" w-[95%] lg:w-[40vw]  justify-center items-center bg-white p-8 my-10 mx-2  shadow-md rounded-md">
+      <h2 className="text-2xl font-bold mb-  text-amber-800">Apply online</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
           <label
