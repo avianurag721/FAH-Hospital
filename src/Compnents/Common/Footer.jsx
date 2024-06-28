@@ -57,11 +57,11 @@ const Footer = () => {
             <a className=" my-4" href="tel:+8433377712 ">
               Call Now: <span className=" text-white">+91-8433377712</span>{" "}
             </a>
-            <img
+            {/* <img
               className=" hidden lg:block items-center rounded-full w-[10rem]"
               src={FooterLogo}
               alt="FooterLogo"
-            />
+            /> */}
             <Link
               className=" p-4 hover:bg-headingColor hover:scale-105 transition-all duration-200 bg-customColor rounded-md text-center my-2 w-[20rem]"
               to="/book-appointment"

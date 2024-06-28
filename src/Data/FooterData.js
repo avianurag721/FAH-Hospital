@@ -49,23 +49,23 @@ const FooterData = [
       },
       {
         Item: "Renal Treatment",
-        nav: "/renal",
+        nav: "",
       },
-      {
-        Item: "Liver Transplant",
-        nav: "/cpr",
-      },
-      {
-        Item: "Bone Marrow transplant",
-        nav: "/cpr",
-      },
-      {
-        Item: "Lung Transplant",
-        nav: "/cpr",
-      },
+      // {
+      //   Item: "Liver Transplant",
+      //   nav: "",
+      // },
+      // {
+      //   Item: "Bone Marrow transplant",
+      //   nav: "",
+      // },
+      // {
+      //   Item: "Lung Transplant",
+      //   nav: "",
+      // },
       {
         Item: "Chest Surgery",
-        nav: "/cpr",
+        nav: "/",
       },
       {
         Item: "More +",
@@ -89,24 +89,24 @@ const FooterData = [
       },
       {
         Item: "Feedback",
-        nav: "/feedback",
+        nav: "/contact-us",
       },
       {
         Item: "Contact us",
         nav: "/contact-us",
       },
-      {
-        Item: "News & Events",
-        nav: "/news-events",
-      },
-      {
-        Item: "Policies and Forms",
-        nav: "/policies",
-      },
-      {
-        Item: "Sitemap",
-        nav: "/sitemap",
-      },
+      // {
+      //   Item: "News & Events",
+      //   nav: "/news-events",
+      // },
+      // {
+      //   Item: "Policies and Forms",
+      //   nav: "/policies",
+      // },
+      // {
+      //   Item: "Sitemap",
+      //   nav: "/sitemap",
+      // },
     ],
   },
 ];
