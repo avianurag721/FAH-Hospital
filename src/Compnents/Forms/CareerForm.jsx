@@ -103,7 +103,7 @@ const CareerForm = () => {
   };
 
   return (
-    <div className=" w-[98vw] lg:w-[40vw]  justify-center items-center bg-white p-8 m-0 lg:m-6 shadow-md rounded-md">
+    <div className=" w-[98vw] lg:w-[40vw]  justify-center items-center bg-white p-8 m-4 lg:m-6 shadow-md rounded-md">
       <h2 className="text-2xl font-bold mb-4  text-amber-800">Apply online</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
@@ -268,7 +268,7 @@ const CareerForm = () => {
 
         <button
           type="submit"
-          className="inline-block bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md shadow-md"
+          className="inline-block bg-customColor hover:bg-blue-600 text-white py-2 px-4 rounded-md shadow-md"
         >
           Submit Application
         </button>

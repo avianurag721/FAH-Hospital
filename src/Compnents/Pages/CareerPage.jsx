@@ -6,7 +6,7 @@ import CareerForm from "../Forms/CareerForm";
 const CareerPage = () => {
   return (
     <div className="flex flex-col w-full justify-center items-center bg-gradient-to-r from-headingColor to-lightCustomColor ">
-      <div className="flex flex-col-reverse lg:flex-row">
+      <div className="flex flex-col-reverse  justify-center items-center lg:flex-row">
         <Vacancies />
         <CareerForm />
       </div>

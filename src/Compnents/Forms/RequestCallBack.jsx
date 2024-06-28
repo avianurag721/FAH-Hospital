@@ -58,7 +58,7 @@ const RequestCallBack = () => {
               placeholder="Enter Your message"
             />
           </label>
-          <button  className=" transition-all duration-200 rounded-full p-4 hover:bg-red-400 text-white hover:text-black text-2xl bg-red-500">Submit</button>
+          <button  className=" transition-all duration-200 rounded-full p-4 hover:scale-105 text-white hover:text-black text-2xl bg-customColor">Submit</button>
         </form>
   )
 }

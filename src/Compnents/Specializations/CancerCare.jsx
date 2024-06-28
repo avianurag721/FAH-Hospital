@@ -7,7 +7,7 @@ import ConsultToggle from '../Home/ConsultToggle';
 const CancerCare = () => {
   return (
     <div className="  h-screen text-black bg-center gap-16 items-center flex flex-col bg-gradient-to-r from-customColor to-white ">
-      <h1 className=" text-black w-[90%] lg:w-[50vw] mt-6  text-4xl text-center font-bold ">
+      <h1 className=" text-black w-[90%] lg:w-[50vw] mt-6  text-2xl lg:text-3xl text-center font-bold ">
         Empowering Hope Through Personalized Cancer Care By best medical experts
       </h1>
       <div className=" font-serif w-[90vw] gap-2 flex  flex-col lg:flex-row justify-around items-center">

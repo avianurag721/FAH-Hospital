@@ -75,7 +75,7 @@ const Nnavbar = () => {
               <Link
                 to={item.nav}
                 className="flex justify-center items-center gap-1 py-2"
-                // onClick={handleLinkClick}
+                onClick={handleLinkClick}
               >
                 {item.Item}
               </Link>
