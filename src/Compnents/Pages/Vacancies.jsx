@@ -22,7 +22,10 @@ const vacanciesData = [
 
 const Vacancies = () => {
   return (
-    <div className=" my-4 mx-2 lg:p-6">
+    <div
+      className="
+     my-4 mx-2 lg:p-6"
+    >
       <div className="max-w-4xl mx-auto bg-white p-6 shadow-md rounded-md">
         <h1 className="text-4xl flex gap-2 justify-center font-bold mb-6">
           <span className=" text-amber-800">We're</span>

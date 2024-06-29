@@ -2,7 +2,7 @@ import React from "react";
 import { HiOutlinePhoneMissedCall } from "react-icons/hi";
 import { BiMessageAltEdit } from "react-icons/bi";
 import FooterData from "../../Data/FooterData";
-import FooterLogo from "../../Images/footerLogo.jpg";
+// import FooterLogo from "../../Images/footerLogo.jpg";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
