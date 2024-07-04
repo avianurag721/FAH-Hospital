@@ -79,10 +79,10 @@ const FooterData = [
         Item: "Help Center",
         nav: "/contact-us",
       },
-      {
-        Item: "About us",
-        nav: "/about-us",
-      },
+      // {
+      //   Item: "About us",
+      //   nav: "/about-us",
+      // },
       {
         Item: "Careers",
         nav: "/career",

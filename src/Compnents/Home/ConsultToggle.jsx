@@ -37,8 +37,8 @@ const ToggleData = [
 const ConsultToggle = () => {
   return (
     <div className="flex justify-center items-center font-serif flex-col">
-      <h1 className=" text-4xl text-headingColor my-4 font-bold">Our Services</h1>
-      <div className=" w-[90vw] my-4 border-2 lg:mx-16 rounded-md bg-white border-headingColor flex flex-col lg:flex-row justify-between  items-center ">
+      {/* <h1 className=" text-4xl text-headingColor my-4 font-bold">Our Services</h1> */}
+      <div className=" w-[90vw] my-4 border-2 lg:mx-16 text-headingColor rounded-md bg-white border-headingColor flex flex-col lg:flex-row justify-between  items-center ">
         {ToggleData.map((item, index) => {
           return (
             <Link

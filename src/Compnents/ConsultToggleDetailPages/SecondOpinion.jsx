@@ -3,6 +3,7 @@ import backgroundImage from "../../Images/ToggelBGimages/doctorsBgImage.jpg";
 import RequestCallBack from "../Forms/RequestCallBack";
 import { FaArrowCircleRight } from "react-icons/fa";
 import Footer from "../Common/Footer";
+import { Link } from "react-router-dom";
 
 const SecondOpinion = () => {
   const [showMore, setShowMore] = useState(true);
@@ -19,9 +20,16 @@ const SecondOpinion = () => {
         <RequestCallBack />
       </div>
       <div className="  flex p-6 py-10 flex-col lg:flex-row  bg-slate-200 justify-center items-center">
-        <h1 className=" mt-40 lg:mt-0  text-4xl w-full lg:w-[40vw] text-center font-bold">
-          About Second Opinion
-        </h1>
+      <div className=" flex flex-col gap-2 font-garamond w-[90%] lg:w-[30%] pt-26 lg:pt-0 text-2xl lg:text-lg text-center font-bold ">
+          <p className="leading-relaxed font-garamond  pt-26 lg:pt-0 text-2xl lg:text-4xl text-center font-bold">
+            About Second Opinion</p>
+          <Link
+            className=" p-4 mt-6 mx-10  hover:bg-lightCustomColor hover:scale-95 transition-all duration-200 bg-customColor  rounded-md text-center "
+            to="/book-appointment"
+          >
+            Book a Consultation
+          </Link>
+        </div>
         <div className=" flex h-[60vh] lg:text-left text-justify justify-center lg:h-[20vh] flex-col items-start p-2 w-[90vw] lg:w-[60vw] ">
           {showMore ? (
             <p>
@@ -43,7 +51,7 @@ const SecondOpinion = () => {
             </p>
           )}
           <button
-            className=" group flex justify-center items-center gap-4 py-4 text-red-500"
+            className=" group flex justify-center items-center gap-4 py-4 text-customColor"
             onClick={() => setShowMore(!showMore)}
           >
             {showMore ? "Show More" : "Show less"}

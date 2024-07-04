@@ -13,7 +13,7 @@ const Navbar = () => {
         <img src={logo} className="" alt="FAH Super Speciality Hospital " />
       </Link>
       {/* Navbar Links */}
-      <div className="gap-6 flex text-black">
+      <div className="gap-6 flex text-headingColor">
         {navData.map((item, index) => (
           <div key={index} className="relative">
             {item.Item === "Careers" || item.Item === "Contact Us"|| item.Item === "Doctors" ? (
@@ -33,7 +33,7 @@ const Navbar = () => {
                     ""
                   )}
                 </p>
-                <div className="hidden top-10 left-1 w-[12rem] bg-customColor rounded-md text-black group-hover:block absolute">
+                <div className="hidden top-10 left-1 w-[12rem] bg-customColor rounded-md text-headingColor group-hover:block absolute">
                   {item?.subdata &&
                     item?.subdata.map((subItem, subIndex) => (
                       <div

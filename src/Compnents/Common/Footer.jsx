@@ -17,9 +17,9 @@ const Footer = () => {
             return (
               <div key={index} className=" ml-6 mb-8 md:mb-0 md:w-1/4">
                 <h4 className="text-xl font-semibold mb-4">
-                  {categoryName.replace(/([A-Z])/g, " $1").trim()}
-                </h4>
-                <ul>
+                    {categoryName.replace(/([A-Z])/g, " $1").trim()}
+                  </h4>
+                  <ul>
                   {items.map((item, idx) => (
                     <li key={idx} className="mb-2">
                       <a href={item.nav} className="hover:underline">
@@ -46,7 +46,7 @@ const Footer = () => {
                 Amrapali Yojna, IIM Road, <br />
                 Dubagga Lucknow
               </span>
-              <p className=" hidden group-hover:block z-10 rounded-md text-black absolute -top-9 bg-customColor py-1 px-16">
+              <p className=" hidden group-hover:block z-10 rounded-md text-headingColor absolute -top-9 bg-customColor py-1 px-16">
                 {" "}
                 Map Location{" "}
               </p>
@@ -57,13 +57,8 @@ const Footer = () => {
             <a className=" my-4" href="tel:+8433377712 ">
               Call Now: <span className=" text-white">+91-8433377712</span>{" "}
             </a>
-            {/* <img
-              className=" hidden lg:block items-center rounded-full w-[10rem]"
-              src={FooterLogo}
-              alt="FooterLogo"
-            /> */}
             <Link
-              className=" p-4 hover:bg-headingColor hover:scale-105 transition-all duration-200 bg-customColor rounded-md text-center my-2 w-[20rem]"
+              className=" p-4 hover:bg-lightCustomColor hover:scale-95 transition-all duration-200 bg-customColor mr-4 rounded-md text-center my-2"
               to="/book-appointment"
             >
               Book a Consultation

@@ -81,19 +81,19 @@ const AllDoctors = () => {
           <p className="  text-slate-500">{doctor.Qualification}</p>
           <p className="  text-slate-500">
             {" "}
-            <span className=" text-black">Department: </span>
+            <span className=" text-headingColor">Department: </span>
             {doctor.Specialization ? doctor.Specialization : "NA"}
           </p>
         </div>
         <div className=" flex gap-2 lg:gap-0 flex-col lg:flex-row justify-around w-[90%] my-2 ">
           <Link
             to={`${doctor.id}`}
-            className="bg-customColor text-center hover:text-black  hover:bg-lightCustomColor text-white px-4 py-2 rounded-md"
+            className="bg-customColor text-center hover:text-headingColor  hover:bg-lightCustomColor text-white px-4 py-2 rounded-md"
           >
             View Profile
           </Link>
           <Link
-            className="bg-customColor text-center hover:text-black  hover:bg-lightCustomColor text-white px-4 py-2 rounded-md"
+            className="bg-customColor text-center hover:text-headingColor  hover:bg-lightCustomColor text-white px-4 py-2 rounded-md"
             to="/book-appointment"
           >
             Book Appointment

@@ -163,15 +163,15 @@ const Speciality = () => {
       <div className=" w-full lg:w-[30%] mx- border-l border-2 p-0 lg:p-4">
         <h2 className=" text-3xl mx-auto">Search By</h2>
         <div className=" flex justify-around items-center">
-          <div className=" cursor-pointer rounded-full border  hover:border-customColor text-white hover:text-black bg-customColor px-2 p-1">
+          <div className=" cursor-pointer rounded-full border  hover:border-customColor text-white hover:text-headingColor bg-customColor px-2 p-1">
             {" "}
             Ailments
           </div>
-          <div className=" cursor-pointer rounded-full border border-black text-black hover:border-customColor   hover:text-white hover:bg-customColor px-2 p-1">
+          <div className=" cursor-pointer rounded-full border border-black text-headingColor hover:border-customColor   hover:text-white hover:bg-customColor px-2 p-1">
             {" "}
             Treatments
           </div>
-          <div className=" cursor-pointer rounded-full border border-black  text-black hover:border-customColor hover:text-white hover:bg-customColor px-2 p-1">
+          <div className=" cursor-pointer rounded-full border border-black  text-headingColor hover:border-customColor hover:text-white hover:bg-customColor px-2 p-1">
             {" "}
             Technologies
           </div>

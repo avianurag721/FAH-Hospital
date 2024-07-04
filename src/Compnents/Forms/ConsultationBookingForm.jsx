@@ -120,12 +120,12 @@ const ConsultationBookingForm = () => {
 
   return (
     <div
-      className=" bg-UltraLlightCustomColor bg-cover bg-center bg-no-repeat w-full  flex-col"
+      className=" bg-UltraLlightCustomColor bg-cover bg-center bg-no-repeat w-full pt-4  flex-col"
       style={{
         backgroundImage: `url(${bgImage})`,
       }}
     >
-      <div className=" w-[96vw] lg:w-[50vw] font-bold bg-lightCustomColor mx-0 lg:mx-10 p-8 shadow-md rounded-md">
+      <div className=" w-[96vw] lg:w-[50vw] font-bold bg-lightShade mx-0 lg:mx-10 p-8 shadow-md rounded-md">
         <h2 className="text-2xl font-bold mb-4">Consultation Booking</h2>
         <form onSubmit={handleSubmit} className="space-y-4 font-bold">
           <div>
@@ -141,13 +141,13 @@ const ConsultationBookingForm = () => {
               name="fullName"
               value={formData.fullName}
               onChange={handleInputChange}
-              className={`mt-1 block outline-none p-2    w-full border-gray-300 rounded-md shadow-sm bg-customColor text-white sm:text-sm ${
+              className={`mt-1 block outline-none p-2    w-full border-gray-300 rounded-md shadow-sm  text-black sm:text-sm ${
                 formErrors.fullName ? "border-red-500" : ""
               }`}
               required
             />
             {formErrors.fullName && (
-              <p className="text-xs text-red-500 mt-1">{formErrors.fullName}</p>
+              <p className="text-xs text-customColor mt-1">{formErrors.fullName}</p>
             )}
           </div>
 
@@ -164,13 +164,13 @@ const ConsultationBookingForm = () => {
               name="email"
               value={formData.email}
               onChange={handleInputChange}
-              className={`mt-1 block w-full outline-none p-2    border-gray-300 rounded-md shadow-sm bg-customColor text-white sm:text-sm ${
+              className={`mt-1 block w-full outline-none p-2    border-gray-300 rounded-md shadow-sm  text-black sm:text-sm ${
                 formErrors.email ? "border-red-500" : ""
               }`}
               required
             />
             {formErrors.email && (
-              <p className="text-xs text-red-500 mt-1">{formErrors.email}</p>
+              <p className="text-xs text-customColor mt-1">{formErrors.email}</p>
             )}
           </div>
 
@@ -187,13 +187,13 @@ const ConsultationBookingForm = () => {
               name="phone"
               value={formData.phone}
               onChange={handleInputChange}
-              className={`mt-1 block w-full outline-none p-2  border-gray-300 rounded-md shadow-sm bg-customColor  text-white sm:text-sm ${
+              className={`mt-1 block w-full outline-none p-2  border-gray-300 rounded-md shadow-sm   text-black sm:text-sm ${
                 formErrors.phone ? "border-red-500" : ""
               }`}
               required
             />
             {formErrors.phone && (
-              <p className="text-xs text-red-500 mt-1">{formErrors.phone}</p>
+              <p className="text-xs text-customColor mt-1">{formErrors.phone}</p>
             )}
           </div>
 
@@ -209,7 +209,7 @@ const ConsultationBookingForm = () => {
               name="doctor"
               value={formData.doctor}
               onChange={handleInputChange}
-              className={`mt-1 block w-full outline-none p-2  border-gray-300 rounded-md shadow-sm bg-customColor text-white sm:text-sm ${
+              className={`mt-1 block w-full outline-none p-2  border-gray-300 rounded-md shadow-sm  text-black sm:text-sm ${
                 formErrors.doctor ? "border-red-500" : ""
               }`}
               required
@@ -220,7 +220,7 @@ const ConsultationBookingForm = () => {
               {/* Add more options as needed */}
             </select>
             {formErrors.doctor && (
-              <p className="text-xs text-red-500 mt-1">{formErrors.doctor}</p>
+              <p className="text-xs text-customColor mt-1">{formErrors.doctor}</p>
             )}
           </div>
 
@@ -238,13 +238,13 @@ const ConsultationBookingForm = () => {
                 name="date"
                 value={formData.date}
                 onChange={handleInputChange}
-                className={`mt-1 block w-full outline-none p-2  border-gray-300 rounded-md shadow-sm bg-customColor text-white sm:text-sm ${
+                className={`mt-1 block w-full outline-none p-2  border-gray-300 rounded-md shadow-sm  text-black sm:text-sm ${
                   formErrors.date ? "border-red-500" : ""
                 }`}
                 required
               />
               {formErrors.date && (
-                <p className="text-xs text-red-500 mt-1">{formErrors.date}</p>
+                <p className="text-xs text-customColor mt-1">{formErrors.date}</p>
               )}
             </div>
             <div>
@@ -260,13 +260,13 @@ const ConsultationBookingForm = () => {
                 name="time"
                 value={formData.time}
                 onChange={handleInputChange}
-                className={`mt-1 block w-full outline-none p-2  border-gray-300 rounded-md shadow-sm bg-customColor text-white sm:text-sm ${
+                className={`mt-1 block w-full outline-none p-2  border-gray-300 rounded-md shadow-sm  text-black sm:text-sm ${
                   formErrors.time ? "border-red-500" : ""
                 }`}
                 required
               />
               {formErrors.time && (
-                <p className="text-xs text-red-500 mt-1">{formErrors.time}</p>
+                <p className="text-xs text-customColor mt-1">{formErrors.time}</p>
               )}
             </div>
           </div>
@@ -284,45 +284,11 @@ const ConsultationBookingForm = () => {
               value={formData.symptoms}
               onChange={handleInputChange}
               rows="3"
-              className="mt-1 block w-full outline-none p-2  border-gray-300 rounded-md shadow-sm bg-customColor text-white sm:text-sm"
+              className="mt-1 block w-full outline-none p-2  border-gray-300 rounded-md shadow-sm  text-black sm:text-sm"
             ></textarea>
           </div>
 
-          <div>
-            <label className="block text-sm font-bold text-gray-700">
-              Preferred Contact Method
-            </label>
-            <div className="mt-1 grid grid-cols-2 gap-4">
-              <div>
-                <label htmlFor="contactPhone" className="flex items-center">
-                  <input
-                    type="radio"
-                    id="contactPhone"
-                    name="preferredContact"
-                    value="phone"
-                    checked={formData.preferredContact === "phone"}
-                    onChange={handleInputChange}
-                    className="mr-2 focus:ring-blue-500"
-                  />
-                  <span className="text-sm text-gray-700">Phone</span>
-                </label>
-              </div>
-              <div>
-                <label htmlFor="contactEmail" className="flex items-center">
-                  <input
-                    type="radio"
-                    id="contactEmail"
-                    name="preferredContact"
-                    value="email"
-                    checked={formData.preferredContact === "email"}
-                    onChange={handleInputChange}
-                    className="mr-2 focus:ring-blue-500"
-                  />
-                  <span className="text-sm text-gray-700">Email</span>
-                </label>
-              </div>
-            </div>
-          </div>
+          
 
           <div>
             <label className="flex items-center">
@@ -332,14 +298,14 @@ const ConsultationBookingForm = () => {
                 name="termsAgreed"
                 checked={formData.termsAgreed}
                 onChange={handleInputChange}
-                className="mr-2 focus:ring-blue-500"
+                className="mr-2"
               />
               <span className="text-sm text-gray-700">
                 I agree to the terms and conditions
               </span>
             </label>
             {formErrors.termsAgreed && (
-              <p className="text-xs text-red-500 mt-1">
+              <p className="text-xs text-customColor mt-1">
                 {formErrors.termsAgreed}
               </p>
             )}
@@ -347,14 +313,14 @@ const ConsultationBookingForm = () => {
 
           <button
             type="submit"
-            className="inline-block bg-customColor text-white hover:bg-headingColor text-white py-2 px-4 rounded-md shadow-md"
+            className="inline-block  text-white bg-customColor hover:bg-lightCustomColor py-2 px-4 rounded-md shadow-md"
           >
             Book Consultation
           </button>
         </form>
       </div>
-      <Services/>
       <ConsultToggle />
+      <Services/>
       <Footer />
     </div>
   );

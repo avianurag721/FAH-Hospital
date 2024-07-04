@@ -31,7 +31,7 @@ const ContactUs = () => {
         style={{ backgroundImage: `url(${contactUsbackground})` }}
         className="  box-border bg-cover gap-10 p-6 lg:p-0 flex flex-col lg:flex-row justify-around items-center min-h-screen bg-gray-100"
       >
-        <div className=" h-[45vh] lg:h-[70vh]  flex flex-col rounded-lg   bg-white border-2 shadow-lg">
+        <div className="lg:p-4 p-2 h-[45vh] lg:h-[70vh]  flex flex-col rounded-lg   bg-white border-2 shadow-lg">
           <h1 className=" px-2 text-center text-3xl font-bold font-serif my-2">
             Get in touch With us
           </h1>

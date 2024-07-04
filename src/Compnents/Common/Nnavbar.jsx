@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import logo from "../../Images/cropped-fah-1.webp";
+import logo from "../../Images/fahLogo.png";
 import { BiMessageAltEdit } from "react-icons/bi";
 import { HiOutlinePhoneMissedCall } from "react-icons/hi";
 import { IoMdArrowDropdown } from "react-icons/io";
@@ -38,14 +38,14 @@ const Nnavbar = () => {
   return (
     <div
       ref={navbarRef}
-      className="relative flex flex-col lg:flex-row justify-between p-4 items-center box-border"
+      className="relative flex bg-lightShade flex-col lg:flex-row justify-between px-4 py-1 items-center box-border"
     >
       {/* Logo and Menu Button */}
       <div className="flex justify-between w-full lg:w-auto px-4 lg:px-0">
         <Link to="/">
           <img
             src={logo}
-            className="h-12"
+            className="h-[5rem] ml-0 lg:ml-16"
             alt="FAH Super Speciality Hospital"
           />
         </Link>
@@ -64,7 +64,7 @@ const Nnavbar = () => {
       <div
         className={`${
           isOpen ? "block" : "hidden"
-        } lg:flex flex-col lg:flex-row gap-6 text-black w-full lg:w-auto px-4 lg:px-0 mt-4 lg:mt-0`}
+        } lg:flex flex-col lg:flex-row gap-6 text-headingColor w-full lg:w-auto px-4 lg:px-0 mt-4 lg:mt-0`}
       >
         {navData.map((item, index) => (
           <div key={index} className="relative group">
@@ -90,13 +90,13 @@ const Nnavbar = () => {
             <div
               className={`${
                 openDropdown === index ? "block" : "hidden"
-              } lg:hidden bg-white rounded-md text-black`}
+              } lg:hidden bg-white rounded-md text-headingColor`}
             >
               {item?.subdata &&
                 item?.subdata.map((subItem, subIndex) => (
                   <Link to={subItem.nav}
                     key={subIndex}
-                    className="flex justify-left gap-2 items-center bg-white rounded-md hover:text-white px-4 py-2 border-b"
+                    className="flex justify-left gap-2 items-center bg-white rounded-md hover:text-black px-4 py-2 border-b"
                   >
                     <img src={subItem.image} className=" " width={35} alt="" />
                     <p
@@ -109,12 +109,12 @@ const Nnavbar = () => {
                   </Link>
                 ))}
             </div>
-            <div className="hidden lg:group-hover:block absolute top-10 left-1 w-[13rem] bg-white rounded-md text-black">
+            <div className="hidden lg:group-hover:block absolute top-10 left-1 w-[13rem] bg-white rounded-md text-headingColor">
               {item?.subdata &&
                 item?.subdata.map((subItem, subIndex) => (
                   <Link to={subItem.nav}
                     key={subIndex}
-                    className="flex justify-left gap-2 items-center bg-white hover:bg-slate-300 rounded-md hover:text-white px-4 py-2 border-b"
+                    className="flex justify-left gap-2 items-center bg-wheat hover:bg-lightShade rounded-md px-4 py-2 border-b"
                   >
                     <img src={subItem.image} className=" " width={35} alt="" />
                     <p
@@ -141,7 +141,7 @@ const Nnavbar = () => {
         </Link>
         <a
           href="tel:+918433377712"
-          className="hover:scale-105 transition-all duration-200 text-white bg-customColor flex justify-center items-center gap-2 p-3 rounded-md border border-customColor"
+          className="hover:scale-105 transition-all duration-200 text-white bg-lightCustomColor flex justify-center items-center gap-2 p-3 rounded-md border border-customColor"
         >
           <HiOutlinePhoneMissedCall className="text-lg" /> Request Call Back
         </a>

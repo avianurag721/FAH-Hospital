@@ -6,12 +6,12 @@ import ConsultToggle from "../Home/ConsultToggle";
 
 const CardiacCare = () => {
   return (
-    <div className="  h-screen text-black bg-center gap-2 lg:gap-16  items-center flex flex-col bg-gradient-to-r from-customColor to-white ">
-      <h1 className=" text-black w-[90%] lg:w-[50vw] mt-6 text-xl  lg:text-4xl text-center font-bold ">
+    <div className="font-garamond  h-screen text-slate-800 bg-center gap-2 lg:gap-16  items-center flex flex-col bg-gradient-to-r from-customColor to-white ">
+      <h1 className=" text-slate-700 w-[90%] lg:w-[50vw] mt-6 text-xl  lg:text-4xl text-center font-bold ">
         Empowering Hope Through Personalized cardiac Care By best medical
         experts
       </h1>
-      <div className=" font-serif w-[90vw] gap-2 flex  flex-col lg:flex-row justify-around items-center">
+      <div className=" font-garamond w-[90vw] gap-2 flex  flex-col lg:flex-row justify-around items-center">
         <p className=" w-[96vw] lg:w-[40vw] text-center text-lg lg:text-2xl">
           At FAH Hospital, we are dedicated to providing the highest quality
           cardiac care through a patient-centered approach that prioritizes

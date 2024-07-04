@@ -104,7 +104,7 @@ const CareerForm = () => {
 
   return (
     <div className=" w-[95%] lg:w-[40vw]  justify-center items-center bg-white p-8 my-10 mx-2  shadow-md rounded-md">
-      <h2 className="text-2xl font-bold mb-  text-amber-800">Apply online</h2>
+      <h2 className="text-2xl font-bold mb-8 text-customColor">Apply online</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
           <label
@@ -119,13 +119,13 @@ const CareerForm = () => {
             name="fullName"
             value={formData.fullName}
             onChange={handleInputChange}
-            className={`mt-1 block w-full p-2 outline-none  border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm ${
-              formErrors.fullName ? "border-red-500" : ""
+            className={`mt-1 block w-full p-2 rounded-md shadow-sm  bg-slate-200 sm:text-sm ${
+              formErrors.fullName ? "border-red-500" : "border-red-500"
             }`}
             required
           />
           {formErrors.fullName && (
-            <p className="text-xs text-red-500 mt-1">{formErrors.fullName}</p>
+            <p className="text-xs text-customColor mt-1">{formErrors.fullName}</p>
           )}
         </div>
 
@@ -142,13 +142,13 @@ const CareerForm = () => {
             name="email"
             value={formData.email}
             onChange={handleInputChange}
-            className={`mt-1 block w-full p-2 outline-none border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm ${
+            className={`mt-1 block w-full p-2  border-gray-300 rounded-md shadow-sm bg-slate-200 focus:ring-blue-500 focus:border-blue-500 sm:text-sm ${
               formErrors.email ? "border-red-500" : ""
             }`}
             required
           />
           {formErrors.email && (
-            <p className="text-xs text-red-500 mt-1">{formErrors.email}</p>
+            <p className="text-xs text-customColor mt-1">{formErrors.email}</p>
           )}
         </div>
 
@@ -165,13 +165,13 @@ const CareerForm = () => {
             name="phone"
             value={formData.phone}
             onChange={handleInputChange}
-            className={`mt-1 block w-full p-2 outline-none border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm ${
+            className={`mt-1 block w-full p-2  border-gray-300 rounded-md shadow-sm bg-slate-200 focus:ring-blue-500 focus:border-blue-500 sm:text-sm ${
               formErrors.phone ? "border-red-500" : ""
             }`}
             required
           />
           {formErrors.phone && (
-            <p className="text-xs text-red-500 mt-1">{formErrors.phone}</p>
+            <p className="text-xs text-customColor mt-1">{formErrors.phone}</p>
           )}
         </div>
 
@@ -187,7 +187,7 @@ const CareerForm = () => {
             name="jobPosition"
             value={formData.jobPosition}
             onChange={handleInputChange}
-            className={`mt-1 block w-full p-2 outline-none border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm ${
+            className={`mt-1 block w-full p-2  border-gray-300 rounded-md shadow-sm bg-slate-200 focus:ring-blue-500 focus:border-blue-500 sm:text-sm ${
               formErrors.jobPosition ? "border-red-500" : ""
             }`}
             required
@@ -200,7 +200,7 @@ const CareerForm = () => {
             {/* Add more job positions as needed */}
           </select>
           {formErrors.jobPosition && (
-            <p className="text-xs text-red-500 mt-1">
+            <p className="text-xs text-customColor mt-1">
               {formErrors.jobPosition}
             </p>
           )}
@@ -218,13 +218,13 @@ const CareerForm = () => {
             id="resume"
             name="resume"
             onChange={handleInputChange}
-            className={`mt-1 block w-full p-2 outline-none text-gray-500 border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm ${
+            className={`mt-1 block w-full p-2  text-gray-500 border-gray-300 rounded-md shadow-sm bg-slate-200 focus:ring-blue-500 focus:border-blue-500 sm:text-sm ${
               formErrors.resume ? "border-red-500" : ""
             }`}
             required
           />
           {formErrors.resume && (
-            <p className="text-xs text-red-500 mt-1">{formErrors.resume}</p>
+            <p className="text-xs text-customColor mt-1">{formErrors.resume}</p>
           )}
         </div>
 
@@ -241,7 +241,7 @@ const CareerForm = () => {
             value={formData.coverLetter}
             onChange={handleInputChange}
             rows="4"
-            className="mt-1 block w-full p-2 outline-none border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+            className="mt-1 block w-full p-2  border-gray-300 rounded-md shadow-sm bg-slate-200 focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
           ></textarea>
         </div>
 
@@ -260,7 +260,7 @@ const CareerForm = () => {
             </span>
           </label>
           {formErrors.termsAgreed && (
-            <p className="text-xs text-red-500 mt-1">
+            <p className="text-xs text-customColor mt-1">
               {formErrors.termsAgreed}
             </p>
           )}

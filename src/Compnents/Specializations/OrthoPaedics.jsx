@@ -6,8 +6,8 @@ import ConsultToggle from "../Home/ConsultToggle";
 
 const OrthoPaedics = () => {
   return (
-    <div className="  h-screen text-black bg-center gap-16 items-center flex flex-col bg-gradient-to-r from-customColor to-white ">
-      <h1 className=" text-black w-[90%] lg:w-[50vw] mt-6  text-4xl text-center font-bold ">
+    <div className="  h-screen text-headingColor bg-center gap-16 items-center flex flex-col bg-gradient-to-r from-customColor to-white ">
+      <h1 className=" text-headingColor w-[90%] lg:w-[50vw] mt-6  text-4xl text-center font-bold ">
         Empowering Hope Through Personalized cardiac Care By best medical
         experts
       </h1>

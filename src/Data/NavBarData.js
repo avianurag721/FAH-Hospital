@@ -3,24 +3,21 @@ import specialities from "./Specialities";
 
 const navData = [
   {
-    Item: "About Us",
-    // nav: "/",
+    Item: "Home",
+    nav: "/",
   },
   {
     Item: "Speciality",
     // nav: "/",
     subdata: specialities,
   },
-  
+
   {
     Item: "Services",
     // nav: "/",
     subdata: NavbarservicesData,
   },
-  {
-    Item: "Careers",
-    nav: "/career",
-  },
+
   {
     Item: "Doctors",
     nav: "/doctors",
@@ -28,6 +25,10 @@ const navData = [
   {
     Item: "Contact Us",
     nav: "/contact-us",
+  },
+  {
+    Item: "Careers",
+    nav: "/career",
   },
 ];
 const mobileNavData = [

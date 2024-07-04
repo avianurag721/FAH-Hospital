@@ -6,7 +6,7 @@ import FahPoster from "../../Images/FahAnniversaryPoster.png";
 const Poster1 = () => {
   return (
     <div  style={{ backgroundImage: `url(${DottedImage})` }}
-      className="bg-cover bg-center flex justify-center  lg:flex-row flex-col items-center "
+      className="bg-cover bg-center h-[70vh] flex justify-center  lg:flex-row flex-col items-center "
     >
       {/* postereImage */}
       <div className="postereImage my-5 lg:my-0 lg:w-[30%] w-[90%] flex justify-center items-center">
@@ -17,7 +17,7 @@ const Poster1 = () => {
         />
       </div>
       {/* central text box  */}
-      <div className="lg:w-[30%] w-[90%] ">
+      <div className="lg:w-[30%] w-[90%] font-garamond ">
         <p className=" text-white text-lg">
           <span className=" text-justify">"</span>
           At FAH Superspeciality Hospital, our mission is to provide exceptional
@@ -28,15 +28,15 @@ const Poster1 = () => {
           the community.<span className="">" </span>
         </p>
         <br />
-        <div className=" text-3xl font-serif text-red-600">
+        <div className=" text-3xl font-garamond text-red-600">
           <p>Dr. Ahmed Raza Khan</p>
           <p className=" text-lg">Managing Director</p>
         </div>
       </div>
 
       {/* right image section  */}
-      <div className="lg:w-[30%] w-[90%] ">
-        <img src={FahPoster} alt="FahPoster" className=" p-4" width={400} />
+      <div className="lg:w-[20%] h-[65vh] w-[90%] ">
+        <img src={FahPoster} alt="FahPoster" className=" p-4" />
       </div>
     </div>
   );
