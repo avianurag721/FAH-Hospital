@@ -31,7 +31,7 @@ const ContactUs = () => {
         style={{ backgroundImage: `url(${contactUsbackground})` }}
         className="  box-border bg-cover gap-10 p-6 lg:p-0 flex flex-col lg:flex-row justify-around items-center min-h-screen bg-gray-100"
       >
-        <div className="lg:p-4 p-2 h-[45vh] lg:h-[70vh]  flex flex-col rounded-lg   bg-white border-2 shadow-lg">
+        <div className="lg:p-4 p-2 h-full lg:h-[70vh]  flex flex-col rounded-lg   bg-white border-2 shadow-lg">
           <h1 className=" px-2 text-center text-3xl font-bold font-serif my-2">
             Get in touch With us
           </h1>
@@ -39,16 +39,16 @@ const ContactUs = () => {
             <p className=" text-red-900 font-bold text-xl">Address:</p>
             <p className=" py-1">
               FAH Super Speciality Hospital, IIM Road, Amrapali Yojna
-              <br /> Dubagga, Lucknow1 %{" "}
+              <br /> Dubagga, Lucknow
             </p>
           </div>
           <div className="px-2 flex flex-col my-2 ">
             <h1 className=" text-red-900 font-bold text-xl">Contact Info:</h1>
             <div className=" flex items-center gap-2 font-bold">
-              <MdAddIcCall /> <a href="tel:+918433377712"> +91-8433377712 </a>{" "}
+              <MdAddIcCall /> <a href="tel:+918433377715"> +91-8433377715 </a>{" "}
             </div>
             <div className=" flex items-center gap-2 font-bold">
-              <BiSolidMessageDetail /> <a href="tel:+918433377712"> E-mail</a>{" "}
+              <BiSolidMessageDetail /> <a href="tel:+918433377715"> E-mail</a>{" "}
             </div>
           </div>
           <iframe

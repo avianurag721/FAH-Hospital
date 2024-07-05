@@ -68,7 +68,7 @@ const AllDoctors = () => {
 
   const DoctorsCard = ({ doctor }) => {
     return (
-      <div className=" flex flex-col justify-center items-center  shadow-blue-500/50  w-[95%] lg:w-[25%]  rounded-md doctor-card  bg-white p-4 ">
+      <div className=" flex flex-col justify-center items-center   w-[95%] lg:w-[25%]  rounded-md doctor-card  bg-white p-4 ">
         <img
           className=" transition-all duration-200 hover:scale-105 rounded-md h-4/6"
           height={40}
@@ -103,11 +103,11 @@ const AllDoctors = () => {
     );
   };
   return (
-    <div className=" flex h-fit flex-col justify-center bg-customColor from-customColor to-UltraLlightCustomColor ">
-      <h1 className=" capitalize mx-auto  text-3xl font-bold font-sans  px-4 py-6">
+    <div className=" flex h-fit flex-col font-garamond justify-center bg-gradient-to-b from-lightCustomColor to-lightShade ">
+      <h1 className=" capitalize mx-auto text-white   text-3xl font-bold px-4 py-6">
         OUR DOCTORS
       </h1>
-      <div className=" bg-gradient-to-b  pb-10 gap-5 w-full flex flex-wrap justify-center">
+      <div className="   pb-10 gap-5 w-full flex flex-wrap justify-center">
         {Doctors.map((doctor, index) => (
           <DoctorsCard key={index} doctor={doctor} />
         ))}

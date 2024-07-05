@@ -6,7 +6,7 @@ import ConsultToggle from "../Home/ConsultToggle";
 
 const GastroSciences = () => {
   return (
-    <div className="  h-screen text-headingColor bg-center gap-16 items-center flex flex-col bg-gradient-to-r from-customColor to-white ">
+    <div className="  text-headingColor bg-center gap-12 items-center flex flex-col bg-lightShade ">
       <h1 className=" text-headingColor w-[90%] lg:w-[50vw] mt-6  text-4xl text-center font-bold ">
         Empowering Hope Through Personalized cardiac Care By best medical
         experts
@@ -23,7 +23,7 @@ const GastroSciences = () => {
           while gastrointestinal surgeons perform advanced surgical procedures.
         </p>
         <div>
-          <img className=" w-[90vw] lg:w-[35vw]" src={gastro} alt="cardiac" />
+          <img className=" w-[90vw] lg:w-[25vw]" src={gastro} alt="cardiac" />
         </div>
       </div>
       <ConsultToggle/>

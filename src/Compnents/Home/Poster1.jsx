@@ -6,7 +6,7 @@ import FahPoster from "../../Images/FahAnniversaryPoster.png";
 const Poster1 = () => {
   return (
     <div  style={{ backgroundImage: `url(${DottedImage})` }}
-      className="bg-cover bg-center h-[70vh] flex justify-center  lg:flex-row flex-col items-center "
+      className="bg-cover bg-center h-full lg:h-[70vh] flex justify-center  lg:flex-row flex-col items-center "
     >
       {/* postereImage */}
       <div className="postereImage my-5 lg:my-0 lg:w-[30%] w-[90%] flex justify-center items-center">
@@ -19,7 +19,7 @@ const Poster1 = () => {
       {/* central text box  */}
       <div className="lg:w-[30%] w-[90%] font-garamond ">
         <p className=" text-white text-lg">
-          <span className=" text-justify">"</span>
+          <span className=" text-center">"</span>
           At FAH Superspeciality Hospital, our mission is to provide exceptional
           healthcare with compassion and innovation. We are committed to
           advancing medical science, improving patient outcomes, and ensuring

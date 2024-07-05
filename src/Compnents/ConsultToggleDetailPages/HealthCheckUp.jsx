@@ -18,7 +18,7 @@ const HealthCheckUp = () => {
             India's Only Preventive Health Program lead by best medical experts
           </p>
           <Link
-            className=" p-4 mt-6 mx-10  hover:bg-lightCustomColor hover:scale-95 transition-all duration-200 bg-customColor  rounded-md text-center "
+            className=" p-4 mt-6 mx-10 text-white hover:bg-customColor hover:scale-95 transition-all duration-200 bg-lightCustomColor  rounded-md text-center "
             to="/book-appointment"
           >
             Book a Consultation

@@ -38,7 +38,7 @@ const Nnavbar = () => {
   return (
     <div
       ref={navbarRef}
-      className="relative flex bg-lightShade flex-col lg:flex-row justify-between px-4 py-1 items-center box-border"
+      className="relative flex bg-slate-200 flex-col lg:flex-row justify-between px-4 py-1 items-center box-border"
     >
       {/* Logo and Menu Button */}
       <div className="flex justify-between w-full lg:w-auto px-4 lg:px-0">
@@ -140,7 +140,7 @@ const Nnavbar = () => {
           <BiMessageAltEdit />
         </Link>
         <a
-          href="tel:+918433377712"
+          href="tel:+918433377715"
           className="hover:scale-105 transition-all duration-200 text-white bg-lightCustomColor flex justify-center items-center gap-2 p-3 rounded-md border border-customColor"
         >
           <HiOutlinePhoneMissedCall className="text-lg" /> Request Call Back

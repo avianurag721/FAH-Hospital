@@ -6,7 +6,7 @@ import ConsultToggle from "../Home/ConsultToggle";
 
 const CardiacCare = () => {
   return (
-    <div className="font-garamond  h-screen text-slate-800 bg-center gap-2 lg:gap-16  items-center flex flex-col bg-gradient-to-r from-customColor to-white ">
+    <div className="font-garamond   text-slate-800 bg-center gap-2 lg:gap-12  items-center flex flex-col bg-lightShade ">
       <h1 className=" text-slate-700 w-[90%] lg:w-[50vw] mt-6 text-xl  lg:text-4xl text-center font-bold ">
         Empowering Hope Through Personalized cardiac Care By best medical
         experts
@@ -24,7 +24,7 @@ const CardiacCare = () => {
           and pathologists analyze tissue samples for accurate diagnosis.
         </p>
         <div>
-          <img className=" w-[90vw] lg:w-[35vw]" src={cardiac} alt="cardiac" />
+          <img className=" w-[90vw] lg:w-[25vw]" src={cardiac} alt="cardiac" />
         </div>
       </div>
       <ConsultToggle/>

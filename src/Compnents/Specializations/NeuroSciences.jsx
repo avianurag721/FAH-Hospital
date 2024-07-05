@@ -6,7 +6,7 @@ import ConsultToggle from "../Home/ConsultToggle";
 
 const NeuroSciences = () => {
   return (
-    <div className="  h-screen text-headingColor bg-center gap-2 lg:gap-16 items-center flex flex-col bg-gradient-to-r from-customColor to-white ">
+    <div className=" text-headingColor bg-center gap-2 lg:gap-12 items-center flex flex-col bg-lightShade ">
       <h1 className=" text-headingColor w-[90%] lg:w-[50vw] mt-6 text-xl  lg:text-4xl text-center font-bold ">
         Empowering Hope Through Personalized cardiac Care By best medical
         experts
@@ -25,7 +25,7 @@ const NeuroSciences = () => {
           accurate diagnosis.
         </p>
         <div>
-          <img className=" w-[80vw] lg:w-[35vw]" src={neuro} alt="cardiac" />
+          <img className=" w-[80vw] lg:w-[25vw]" src={neuro} alt="cardiac" />
         </div>
       </div>
       <ConsultToggle/>

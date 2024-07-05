@@ -46,7 +46,7 @@ const Footer = () => {
                 Amrapali Yojna, IIM Road, <br />
                 Dubagga Lucknow
               </span>
-              <p className=" hidden group-hover:block z-10 rounded-md text-headingColor absolute -top-9 bg-customColor py-1 px-16">
+              <p className=" hidden group-hover:block z-10 rounded-md text-white absolute -top-9 bg-customColor py-1 px-16">
                 {" "}
                 Map Location{" "}
               </p>
@@ -58,7 +58,7 @@ const Footer = () => {
               Call Now: <span className=" text-white">+91-8433377712</span>{" "}
             </a>
             <Link
-              className=" p-4 hover:bg-lightCustomColor hover:scale-95 transition-all duration-200 bg-customColor mr-4 rounded-md text-center my-2"
+              className=" p-4 hover:bg-lightCustomColor hover:scale-95 transition-all duration-200 bg-customColor mr-0 lg:mr-4 rounded-md text-center my-2"
               to="/book-appointment"
             >
               Book a Consultation
@@ -71,7 +71,7 @@ const Footer = () => {
                 <BiMessageAltEdit />
               </Link>
               <a
-                href="tel:+918433377712"
+                href="tel:+918433377715"
                 className="hover:scale-105 transition-all duration-200 text-white bg-customColor flex justify-center items-center gap-2 p-3 rounded-md border border-customColor"
               >
                 <HiOutlinePhoneMissedCall className="text-lg" /> Request Call

@@ -161,7 +161,7 @@ const Speciality = () => {
       </div>
       {/* alphabets search division/  */}
       <div className=" w-full lg:w-[30%] mx- border-l border-2 p-0 lg:p-4">
-        <h2 className=" text-3xl mx-auto">Search By</h2>
+        {/* <h2 className=" text-3xl mx-auto">Search By</h2> */}
         <div className=" flex justify-around items-center">
           <div className=" cursor-pointer rounded-full border  hover:border-customColor text-white hover:text-headingColor bg-customColor px-2 p-1">
             {" "}
