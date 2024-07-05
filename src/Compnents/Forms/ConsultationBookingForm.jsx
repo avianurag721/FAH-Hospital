@@ -125,7 +125,7 @@ const ConsultationBookingForm = () => {
         backgroundImage: `url(${bgImage})`,
       }}
     >
-      <div className=" w-[96vw] lg:w-[50vw] font-bold bg-lightShade mx-0 lg:mx-10 p-8 shadow-md rounded-md">
+      <div className=" w-[96vw] lg:w-[50vw] font-bold bg-lightShade mx-auto lg:mx-10 p-8 shadow-md rounded-md">
         <h2 className="text-2xl font-bold mb-4">Consultation Booking</h2>
         <form onSubmit={handleSubmit} className="space-y-4 font-bold">
           <div>
