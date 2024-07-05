@@ -13,9 +13,17 @@ const SecondOpinion = () => {
         className="h-screen bg-cover bg-center flex-col lg:flex-row flex justify-around items-center gap-10"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
-        <h1 className="flex my-5 lg:my-0 leading-snug w-[90%] lg:w-[20%] text-4xl text-center font-bold ">
-          Get a Second Opinion From anywhere anytime
-        </h1>
+        <div className=" flex flex-col gap-2 font-garamond w-[90%] lg:w-[30%] pt-26 lg:pt-0 text-2xl lg:text-lg text-center font-bold ">
+          <p className="leading-relaxed font-garamond  pt-26 lg:pt-0 text-2xl lg:text-4xl text-center font-bold">
+            Get a Second opinion from Anywhere Anytime
+          </p>
+          <Link
+            className=" p-4 mt-6 mx-10 text-white hover:bg-customColor hover:scale-95 transition-all duration-200 bg-lightCustomColor  rounded-md text-center "
+            to="/book-appointment"
+          >
+            Book a Consultation
+          </Link>
+        </div>
         {/* call back request form  this is imported from ../components/forms */}
         <RequestCallBack />
       </div>

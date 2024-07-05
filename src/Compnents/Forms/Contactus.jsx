@@ -59,7 +59,7 @@ const ContactUs = () => {
             style={{ border: 0 }}
             allowFullScreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+            referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
         <form
@@ -137,7 +137,7 @@ const ContactUs = () => {
           </div>
           <div className="flex items-center justify-between">
             <button
-              className=" bg-customColor w-[90%] mx-auto hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              className=" w-full p-2 mt-6 mx-10 font-garamond text-white text-2xl  hover:bg-lightCustomColor hover:scale-95 transition-all duration-200 bg-customColor  rounded-md text-center "
               type="submit"
             >
               Send

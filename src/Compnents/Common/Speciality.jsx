@@ -178,7 +178,7 @@ const Speciality = () => {
         </div>
         <div className=" flex justify-center my-5 gap-1 flex-wrap">
           {alphabets.map((item, index) => (
-            <p className=" cursor-pointer flex justify-center  p-4 w-16 hover:bg-customColor hover:text-white  rounded-full bg-white border">
+            <p key={index} className=" cursor-pointer flex justify-center  p-4 w-16 hover:bg-customColor hover:text-white  rounded-full bg-white border">
               {item.alphabet}{" "}
             </p>
           ))}
