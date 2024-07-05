@@ -93,7 +93,7 @@ function Emergency() {
             contact us at:
           </p>
           <p className="mt-2 text-gray-700">
-            Phone: <strong>+91-8433377712</strong>
+            Phone: <strong>+91-8433377715</strong>
             <br />
             Address:{" "}
             <strong>

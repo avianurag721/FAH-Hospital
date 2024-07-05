@@ -54,8 +54,8 @@ const Footer = () => {
                 .
               </span>
             </a>
-            <a className=" my-4" href="tel:+8433377712 ">
-              Call Now: <span className=" text-white">+91-8433377712</span>{" "}
+            <a className=" my-4" href="tel:+8433377715 ">
+              Call Now: <span className=" text-white">+91-8433377715</span>{" "}
             </a>
             <Link
               className=" p-4 hover:bg-lightCustomColor hover:scale-95 transition-all duration-200 bg-customColor mr-0 lg:mr-4 rounded-md text-center my-2"
