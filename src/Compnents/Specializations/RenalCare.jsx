@@ -12,7 +12,7 @@ const RenalCare = () => {
         Empowering Hope Through Personalized Renal Care By best medical experts
       </h1>
       <div className=" font-serif w-[90vw] gap-2 flex  flex-col lg:flex-row justify-around items-center">
-        <div className=" w-[90vw] lg:w-[40vw] text-center text-lg lg:text-2xl">
+        <div className=" flex flex-col w-[90vw] lg:w-[40vw] text-center text-lg lg:text-2xl">
           <p>
             {" "}
             At FAH Hospital, we are dedicated to providing the highest quality
