@@ -8,7 +8,7 @@ const CancerCare = () => {
   return (
     <div className="  text-headingColor bg-center gap-16 items-center flex flex-col bg-lightShade">
       <h1 className=" text-headingColor w-[90%] lg:w-[50vw] mt-6  text-2xl lg:text-3xl text-center font-bold ">
-        Empowering Hope Through Personalized Cancer Care By best medical experts
+      Empowering Hope Through Personalized Cancer Care by Top Medical Experts
       </h1>
       <div className=" font-garamond w-[90vw] gap-2 flex  flex-col lg:flex-row justify-around items-center">
         <p className=" w-[90vw] lg:w-[40vw] text-justify text-lg lg:text-2xl">

@@ -10,7 +10,7 @@ const HealthCheckUp = () => {
   return (
     <div>
       <div
-        className="h-screen bg-cover bg-center flex flex-col lg:flex-row justify-around items-center gap-10"
+        className=" bg-cover bg-center flex flex-col lg:flex-row justify-around items-center gap-6 py-2"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
         <div className=" flex flex-col gap-2 font-garamond w-[90%] lg:w-[30%] pt-26 lg:pt-0 text-2xl lg:text-lg text-center font-bold ">
@@ -18,7 +18,7 @@ const HealthCheckUp = () => {
             India's Only Preventive Health Program lead by best medical experts
           </p>
           <Link
-            className=" p-4 mt-6 mx-10 text-white hover:bg-customColor hover:scale-95 transition-all duration-200 bg-lightCustomColor  rounded-md text-center "
+            className=" p-1 lg:p-4 mt-2 lg:mt-6 mx-2 lg:mx-10 text-white hover:bg-customColor hover:scale-95 transition-all duration-200 bg-lightCustomColor  rounded-md text-center "
             to="/book-appointment"
           >
             Book a Consultation
@@ -27,11 +27,11 @@ const HealthCheckUp = () => {
         {/* call back request form  this is imported from ../components/forms */}
         <RequestCallBack />
       </div>
-      <div className=" pt-40 font-garamond lg:pt-0 flex p-6 flex-col lg:flex-row bg-slate-200 justify-center items-center">
-        <h1 className=" my-4 text-4xl w-full lg:w-[35vw] text-center font-bold">
+      <div className="   lg:pt-0 font-garamond flex p-6 flex-col lg:flex-row bg-slate-200 justify-center items-center">
+        <h1 className="  text-lg lg:text-4xl w-full lg:w-[35vw] text-center font-bold">
           About FAH's Preventive Health Program
         </h1>
-        <div className=" flex h-[80vh] lg:h-[25vh] lg:text-left text-justify justify-center flex-col items-start px-6 mt-0  lg:mt-6 w-[90vw] lg:w-[60vw] ">
+        <div className={` flex ${showMore?"h-[40vh] ":"h-[80vh] "} lg:h-[25vh] lg:text-left text-justify justify-start lg:justify-center flex-col items-start px-6 mt-0 mb-14 lg:mb-0  lg:mt-6 w-[95vw] lg:w-[60vw] `}>
           {showMore ? (
             <p>
               At FAH Hospital, we have transformed the traditional health checks

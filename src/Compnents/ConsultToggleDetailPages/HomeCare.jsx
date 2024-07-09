@@ -18,7 +18,7 @@ const HomeCare = () => {
             Home Care
           </p>
           <Link
-            className=" p-4 mt-6 mx-10 text-white hover:bg-customColor hover:scale-95 transition-all duration-200 bg-lightCustomColor  rounded-md text-center "
+            className=" p-2 lg:p-4 mt-2 lg:mt-6 mx-2 lg:mx-10 text-white hover:bg-customColor hover:scale-95 transition-all duration-200 bg-lightCustomColor  rounded-md text-center "
             to="/book-appointment"
           >
             Book a Consultation
@@ -27,11 +27,11 @@ const HomeCare = () => {
         {/* call back request form  this is imported from ../components/forms */}
         <RequestCallBack />
       </div>
-      <div className=" flex p-6 py-10 flex-col lg:flex-row bg-slate-200 justify-center items-center">
+      <div className=" flex p-6 py-6 lg:py-10 flex-col lg:flex-row bg-slate-200 justify-center items-center">
         <h1 className=" text-4xl w-full lg:w-[35vw] text-center font-bold">
           About FAH's Home Care
         </h1>
-        <div className=" flex h-[95vh] font-garamond lg:text-left text-center lg:h-[31vh] flex-col justify-center items-start px-6 w-[90vw] lg:w-[60vw] ">
+        <div className= {`flex ${showMore?"h-[62vh]":"h-full"} font-garamond lg:text-left text-justify lg:h-[31vh] flex-col justify-center items-start px-6 w-[95vw] lg:w-[60vw] `}>
           {showMore ? (
             <p>
               FAH Hospital Homecare is a trusted partner in promoting well-being,

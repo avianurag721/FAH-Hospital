@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const ServiceCard = ({ service }) => {
   return (
-    <div className=" transition-all  text-customColor duration-200 hover:-translate-y-1.5 shadow-blue-500/50  w-[90vw] lg:w-[22vw] h-[60vh] lg:h-[62vh] rounded-md service-card  bg-white p-4 ">
+    <div className=" transition-all  text-customColor duration-200 hover:-translate-y-1.5 shadow-blue-500/50  w-[90vw] lg:w-[22vw] h-[45vh] lg:h-[62vh] rounded-md service-card  bg-white p-4 ">
       <img className=" rounded-md" src={service.image} alt={service.heading} />
       <div className="  gap-2 my-2 lg:my-6 ">
         <h3 className=" my-5 text-2xl font-bold ">{service.heading}</h3>

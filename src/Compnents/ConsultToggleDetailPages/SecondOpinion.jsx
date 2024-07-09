@@ -14,11 +14,11 @@ const SecondOpinion = () => {
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
         <div className=" flex flex-col gap-2 font-garamond w-[90%] lg:w-[30%] pt-26 lg:pt-0 text-2xl lg:text-lg text-center font-bold ">
-          <p className="leading-relaxed font-garamond  pt-26 lg:pt-0 text-2xl lg:text-4xl text-center font-bold">
+          <p className="leading-relaxed font-garamond   lg:pt-0 text-lg lg:text-4xl text-center font-bold">
             Get a Second opinion from Anywhere Anytime
           </p>
           <Link
-            className=" p-4 mt-6 mx-10 text-white hover:bg-customColor hover:scale-95 transition-all duration-200 bg-lightCustomColor  rounded-md text-center "
+            className=" p-1 lg:p-4 mt-2 lg:mt-4 mx-2 lg:mx-10 text-white hover:bg-customColor hover:scale-95 transition-all duration-200 bg-lightCustomColor  rounded-md text-center "
             to="/book-appointment"
           >
             Book a Consultation
@@ -27,18 +27,13 @@ const SecondOpinion = () => {
         {/* call back request form  this is imported from ../components/forms */}
         <RequestCallBack />
       </div>
-      <div className="  flex p-6 py-10 flex-col lg:flex-row  bg-slate-200 justify-center items-center">
-      <div className=" flex flex-col gap-2 font-garamond w-[90%] lg:w-[30%] pt-26 lg:pt-0 text-2xl lg:text-lg text-center font-bold ">
-          <p className="leading-relaxed font-garamond  pt-26 lg:pt-0 text-2xl lg:text-4xl text-center font-bold">
-            About Second Opinion</p>
-          <Link
-            className=" p-4 mt-6 mx-10  hover:bg-lightCustomColor hover:scale-95 transition-all duration-200 bg-customColor  rounded-md text-center "
-            to="/book-appointment"
-          >
-            Book a Consultation
-          </Link>
+      <div className="  flex p-6 py-2 lg:py-2 flex-col lg:flex-row  bg-slate-200 justify-center items-center">
+        <div className=" flex flex-col gap-2 font-garamond w-[90%] lg:w-[30%] pt-26 lg:pt-0 text-2xl lg:text-lg text-center font-bold ">
+          <p className="leading-relaxed font-garamond   lg:pt-0 text-2xl lg:text-4xl text-center font-bold">
+            About Second Opinion
+          </p>
         </div>
-        <div className=" flex h-[60vh] lg:text-left text-justify justify-center lg:h-[20vh] flex-col items-start p-2 w-[90vw] lg:w-[60vw] ">
+        <div className={`flex ${showMore?"h-[35vh]":"40vh"} font-garamond lg:text-left text-justify lg:h-[25vh] flex-col justify-center items-start px-6 w-[95vw] lg:w-[60vw] `}>
           {showMore ? (
             <p>
               Prioritising your health means understanding all aspects of the
@@ -67,7 +62,7 @@ const SecondOpinion = () => {
           </button>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

@@ -112,7 +112,10 @@ const alphabets = [
 
 const Speciality = () => {
   return (
-    <div id="speciality" className=" transition-all duration-200 my-14 flex justify-center flex-col lg:flex-row-reverse w-full">
+    <div
+      id="speciality"
+      className=" transition-all duration-200 my-14 flex justify-center flex-col lg:flex-row-reverse w-full"
+    >
       {/* central section  */}
       <div className="  w-[95vw] mx-4  lg:w-[33%] ">
         {specialities.map((item, index) => {
@@ -137,14 +140,17 @@ const Speciality = () => {
             </Link>
           );
         })}
-        <div className=" cursor-pointer group   flex pt-16 gap-3 items-center">
-          <p>View All Specialities</p>
+        <div className=" cursor-pointer group text-center    flex pt-16 gap-3 items-center">
+          <p className=" ">View All Specialities</p>
           <p className=" group-hover:translate-x-4 transition-all duration-300 text-customColor text-lg">
             <FaArrowCircleRight />
           </p>
         </div>
       </div>
-      <div id="services" className=" flex justify-center  text-center w-[100%] lg:w-[25%]">
+      <div
+        id="services"
+        className=" flex justify-center  text-center w-[100%] lg:w-[25%]"
+      >
         {/* <h3 className=" text-lg">Specialities</h3> */}
         <p className=" text-ceter my-8 px-2 text-slate-600 text-lg">
           At FAH Hospital, our Clinical Care Excellence Center is dedicated to
@@ -178,7 +184,10 @@ const Speciality = () => {
         </div>
         <div className=" flex justify-center my-5 gap-1 flex-wrap">
           {alphabets.map((item, index) => (
-            <p key={index} className=" cursor-pointer flex justify-center  p-4 w-16 hover:bg-customColor hover:text-white  rounded-full bg-white border">
+            <p
+              key={index}
+              className=" cursor-pointer flex justify-center  p-4 w-16 hover:bg-customColor hover:text-white  rounded-full bg-white border"
+            >
               {item.alphabet}{" "}
             </p>
           ))}

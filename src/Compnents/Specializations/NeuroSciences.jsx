@@ -8,7 +8,7 @@ const NeuroSciences = () => {
   return (
     <div className=" text-headingColor bg-center gap-2 lg:gap-12 items-center flex flex-col bg-lightShade ">
       <h1 className=" text-headingColor w-[90%] lg:w-[50vw] mt-6 text-xl  lg:text-4xl text-center font-bold ">
-        Empowering Hope Through Personalized cardiac Care By best medical
+        Empowering Hope Through Personalized Neuro Care By best medical
         experts
       </h1>
       <div className=" font-serif w-[90vw] gap-2 flex  flex-col lg:flex-row justify-around items-center">
