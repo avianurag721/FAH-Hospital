@@ -6,8 +6,9 @@ const CareerForm = () => {
     email: "",
     phone: "",
     jobPosition: "",
-    resume: null,
+    resumeLink: "",
     coverLetter: "",
+
     termsAgreed: false,
   });
 
@@ -16,7 +17,7 @@ const CareerForm = () => {
     email: "",
     phone: "",
     jobPosition: "",
-    resume: "",
+    resumeLink: "",
     termsAgreed: "",
   });
 
@@ -40,7 +41,7 @@ const CareerForm = () => {
         email: "",
         phone: "",
         jobPosition: "",
-        resume: null,
+        resume: "",
         coverLetter: "",
         termsAgreed: false,
       });
@@ -89,8 +90,8 @@ const CareerForm = () => {
       errors.jobPosition = "Please select a job position";
       valid = false;
     }
-    if (!formData.resume) {
-      errors.resume = "Resume is required";
+    if (!formData.resumeLink) {
+      errors.resumeLink = "Resume is required";
       valid = false;
     }
     if (!formData.termsAgreed) {
@@ -125,7 +126,9 @@ const CareerForm = () => {
             required
           />
           {formErrors.fullName && (
-            <p className="text-xs text-customColor mt-1">{formErrors.fullName}</p>
+            <p className="text-xs text-customColor mt-1">
+              {formErrors.fullName}
+            </p>
           )}
         </div>
 
@@ -206,7 +209,7 @@ const CareerForm = () => {
           )}
         </div>
 
-        <div>
+        {/* <div>
           <label
             htmlFor="resume"
             className="block text-sm font-medium text-gray-700"
@@ -226,8 +229,23 @@ const CareerForm = () => {
           {formErrors.resume && (
             <p className="text-xs text-customColor mt-1">{formErrors.resume}</p>
           )}
+        </div> */}
+        <div>
+          <label
+            htmlFor="resumeLink"
+            className="block text-sm font-medium text-gray-700"
+          >
+            Resume Link
+          </label>
+          <input
+            id="resumeLink"
+            name="resumeLink"
+            value={formData.resumeLink}
+            onChange={handleInputChange}
+            rows="4"
+            className="mt-1 block w-full p-2  border-gray-300 rounded-md shadow-sm bg-slate-200 focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+          ></input>
         </div>
-
         <div>
           <label
             htmlFor="coverLetter"
@@ -268,7 +286,7 @@ const CareerForm = () => {
 
         <button
           type="submit"
-          className="inline-block bg-customColor hover:bg-blue-600 text-white py-2 px-4 rounded-md shadow-md"
+          className="inline-block bg-customColor hover:bg-lightCustomColor text-white py-2 px-4 rounded-md shadow-md"
         >
           Submit Application
         </button>

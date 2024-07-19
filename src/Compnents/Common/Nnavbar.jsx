@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import logo from "../../Images/fahLogo.png";
+import fullLogo from "../../Images/fullLogo.png";
 import { BiMessageAltEdit } from "react-icons/bi";
 import { HiOutlinePhoneMissedCall } from "react-icons/hi";
 import { IoMdArrowDropdown } from "react-icons/io";
@@ -42,12 +43,13 @@ const Nnavbar = () => {
     >
       {/* Logo and Menu Button */}
       <div className="flex justify-between w-full lg:w-auto px-4 lg:px-0">
-        <Link to="/">
+        <Link className=" flex justify-center" to="/">
           <img
-            src={logo}
+            src={fullLogo}
             className="h-[5rem] ml-0 lg:ml-16"
             alt="FAH Super Speciality Hospital"
           />
+          {/* <p className=" font-garamond">Fah Super Speciality Hospital</p> */}
         </Link>
         <button
           className="lg:hidden text-2xl"

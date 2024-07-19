@@ -114,7 +114,7 @@ const Speciality = () => {
   return (
     <div
       id="speciality"
-      className=" transition-all duration-200 my-14 flex justify-center flex-col lg:flex-row-reverse w-full"
+      className=" transition-all duration-200 my-14 flex justify-around flex-col lg:flex-row-reverse w-full"
     >
       {/* central section  */}
       <div className="  w-[95vw] mx-4  lg:w-[33%] ">
@@ -123,7 +123,7 @@ const Speciality = () => {
             <Link
               key={index}
               to={item.nav}
-              className=" group  flex justify-around lg:justify-between py-2 border-b border-black w-[95vw] lg:w-full"
+              className=" group  flex justify-around lg:justify-around py-2 border-b border-black w-[95vw] lg:w-full"
             >
               <img
                 className=" bg-transparent "
@@ -131,7 +131,7 @@ const Speciality = () => {
                 src={item.image}
                 alt="imgg"
               />
-              <div className=" group-hover:text-customColor  w-[60%] flex items-center justify-between">
+              <div className=" group-hover:text-customColor  w-[60%] flex items-center justify-around">
                 <p> {item.Item} </p>
                 <p className=" group-hover:translate-x-4 transition-all duration-300 pr-0 lg:pr-5 text-lg">
                   <FaArrowCircleRight />
@@ -147,12 +147,12 @@ const Speciality = () => {
           </p>
         </div>
       </div>
-      <div
+      {/* <div
         id="services"
         className=" flex justify-center  text-center w-[100%] lg:w-[25%]"
-      >
-        {/* <h3 className=" text-lg">Specialities</h3> */}
-        <p className=" text-ceter my-8 px-2 text-slate-600 text-lg">
+      > */}
+      {/* <h3 className=" text-lg">Specialities</h3> */}
+      {/* <p className=" text-ceter my-8 px-2 text-slate-600 text-lg">
           At FAH Hospital, our Clinical Care Excellence Center is dedicated to
           providing top-tier medical services and compassionate patient care. We
           combine state-of-the-art technology with a highly skilled team of
@@ -163,8 +163,8 @@ const Speciality = () => {
           medical advancements to enhance patient outcomes. With a focus on
           individualized care, we strive to meet the unique needs of every
           patient, fostering an environment of trust, comfort, and healing.
-        </p>
-      </div>
+        </p> */}
+      {/* </div> */}
       {/* alphabets search division/  */}
       <div className=" w-full lg:w-[30%] mx- border-l border-2 p-0 lg:p-4">
         {/* <h2 className=" text-3xl mx-auto">Search By</h2> */}

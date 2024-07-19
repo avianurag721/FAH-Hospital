@@ -11,23 +11,25 @@ const ServiceCard = ({ service }) => {
         <h3 className=" my-5 text-2xl font-bold ">{service.heading}</h3>
         <p className="  text-slate-500">{service.subheading}</p>
       </div>
-        <a
-          href={`${service.nav.nav}`}
-          className=" font-bold group w-full lg:w-[50%]  flex justify-between items-center"
-        >
-          <Link to={`${service.nav.navlink}`} className=" flex justify-center items-center gap-5  group-hover:text-customColor ">
-            {service.nav.navTitle}{" "}
-            <FaArrowCircleRight className=" group-hover:translate-x-5 group-hover:text-customColor transition-all duration-200 " />
-          </Link>
-          
-        </a>
+      <Link
+        to={`${service.nav.navlink}`}
+        className="font-bold group w-full lg:w-[50%] flex justify-between items-center"
+      >
+        <span className="flex justify-center items-center gap-5 group-hover:text-customColor">
+          {service.nav.navTitle}
+          <FaArrowCircleRight className="group-hover:translate-x-5 group-hover:text-customColor transition-all duration-200" />
+        </span>
+      </Link>
     </div>
   );
 };
 
 const Services = () => {
   return (
-    <div id="services" className="  w-full font-garamond flex bg-lightShade gap-3 flex-col justify-center items-center py-4">
+    <div
+      id="services"
+      className="  w-full font-garamond flex bg-lightShade gap-3 flex-col justify-center items-center py-4"
+    >
       <h1 className=" font-bold text-4xl mb-4 "> Services</h1>
       <div className="  flex flex-col lg:flex-row gap-3 justify-around items-center">
         {servicesData.map((item, index) => (

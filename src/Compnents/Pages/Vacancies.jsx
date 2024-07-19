@@ -1,29 +1,40 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { endpoints } from "../../Services/apis";
+import { apiConnector } from "../../Services/connector";
+const { GET_ALL_VACANCY } = endpoints;
 
-const vacanciesData = [
-  {
-    id: 1,
-    title: "Registered Nurse",
-    description:
-      "We are looking for a dedicated and compassionate registered nurse to join our healthcare team.",
-    location: "FAH Hospital, Amrapali Yojna, IIM Road, Lucknow",
-    department: "Nursing",
-  },
-  {
-    id: 2,
-    title: "Medical Assistant",
-    description:
-      "Join our team as a medical assistant to provide support to our healthcare professionals.",
-    location: "FAH Hospital, Amrapali Yojna, IIM Road, Lucknow",
-    department: "Support Staff",
-  },
-  // Add more vacancies as needed
-];
+
 
 const Vacancies = () => {
+  const [vacancies, setVacancies] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const getVacancies = async () => {
+    try {
+      const response = await apiConnector("POST", GET_ALL_VACANCY);
+      setVacancies(response?.data?.data);
+      console.log("res", response?.data?.data);
+    } catch (error) {
+      console.error("Error fetching doctor data:", error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    getVacancies();
+  }, []);
+
+  if (loading) {
+    return (
+      <p className=" flex justify-center items-center w-full h-full">
+        Loading...
+      </p>
+    );
+  }
+
   return (
     <div
-      className="
+      className=" w-full h-[80vh] overflow-y-auto lg:w-[50%]
      my-4 mx-2 lg:p-6"
     >
       <div className="max-w-4xl mx-auto bg-white p-6 shadow-md rounded-md">
@@ -32,23 +43,31 @@ const Vacancies = () => {
           <span className=" text-slate-700">Hiring</span>
         </h1>
         <div className="space-y-4">
-          {vacanciesData.map((vacancy) => (
+          {vacancies?.map((vacancy) => (
             <div
-              key={vacancy.id}
+              key={vacancy._id}
               className="p-4 border border-gray-300 rounded-md bg-white"
             >
               <h2 className="text-xl font-semibold  text-customColor">
-                {vacancy.title}
+                {vacancy.Title}
               </h2>
-              <p className="">{vacancy.description}</p>
-              <div className="text-gray-600 mt-2">
+              <p className="text-gray-600 mt-2 font-semibold"><span>About Hiring :</span>{vacancy.Info}</p>
+              <div className="text-gray-600">
                 <p>
-                  <span className="font-semibold">Location:</span>{" "}
-                  {vacancy.location}
+                  <span className="font-semibold">Experience Req. :</span>{" "}
+                  {vacancy.Experience}
                 </p>
                 <p>
-                  <span className="font-semibold">Department:</span>{" "}
-                  {vacancy.department}
+                  <span className="font-semibold">Location :</span>{" "}
+                  {vacancy.Location}
+                </p>
+                <p>
+                  <span className="font-semibold">Department :</span>{" "}
+                  {vacancy.Department}
+                </p>
+                <p>
+                  <span className="font-semibold">Department :</span>{" "}
+                  {vacancy.Qualification}
                 </p>
               </div>
             </div>

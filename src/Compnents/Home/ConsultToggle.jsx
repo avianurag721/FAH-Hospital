@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const ToggleData = [
   {
     image: "",
-    Data: "BooK Appointment",
+    Data: "Book Appointment",
     nav: "/book-appointment",
   },
   {

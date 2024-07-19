@@ -1,11 +1,14 @@
-// src/components/ConsultationBookingForm.js
 import React, { useState } from "react";
 import Footer from "../Common/Footer";
 import bgImage from "../../Images/ConsultpgBgImage.jpg";
 import ConsultToggle from "../Home/ConsultToggle";
 import Services from "../Common/Services";
+import { apiConnector } from "../../Services/connector";
+import { endpoints } from "../../Services/apis";
+const { BOOK_APPOINTMENT } = endpoints;
 
 const ConsultationBookingForm = () => {
+  const [loading,Setloading]=useState(false)
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -36,33 +39,41 @@ const ConsultationBookingForm = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (validateForm()) {
-      console.log("Form data:", formData);
-      // You can handle form submission logic here (e.g., sending data to backend)
-      // Reset form after submission (if needed)
-      setFormData({
-        fullName: "",
-        email: "",
-        phone: "",
-        doctor: "",
-        date: "",
-        time: "",
-        symptoms: "",
-        preferredContact: "phone",
-        termsAgreed: false,
-      });
-      setFormErrors({
-        fullName: "",
-        email: "",
-        phone: "",
-        doctor: "",
-        date: "",
-        time: "",
-        termsAgreed: "",
-      });
-      alert("Form Submitted Successfully");
+      try {
+        Setloading(true)
+        const response = await apiConnector("POST", BOOK_APPOINTMENT, formData);
+        console.log("Form data:", response.data);
+        // Reset form after submission
+        setFormData({
+          fullName: "",
+          email: "",
+          phone: "",
+          doctor: "",
+          date: "",
+          time: "",
+          symptoms: "",
+          preferredContact: "phone",
+          termsAgreed: false,
+        });
+        setFormErrors({
+          fullName: "",
+          email: "",
+          phone: "",
+          doctor: "",
+          date: "",
+          time: "",
+          termsAgreed: "",
+        });
+        alert("Thank You! Please Check Your Mail for futher Updates, Our team will reach out to you Shortly");
+        Setloading(false)
+      } catch (error) {
+        console.error("Error submitting form:", error);
+        alert("Error submitting form. Please try again.");
+        Setloading(false)
+      }
     }
   };
 
@@ -117,6 +128,10 @@ const ConsultationBookingForm = () => {
     setFormErrors(errors);
     return valid;
   };
+
+  if (loading) {
+    return ( <p className=" w-full h-[100vh] bg-customColor  flex justify-center items-center text-2xl font-garamond">Loading...</p> )
+  }
 
   return (
     <div
@@ -215,8 +230,9 @@ const ConsultationBookingForm = () => {
               required
             >
               <option value="">Select a doctor</option>
-              <option value="Dr. John Doe">Dr. John Doe</option>
-              <option value="Dr. Jane Smith">Dr. Jane Smith</option>
+              <option value="Dr.Noopur Singh">Dr.Noopur Singh</option>
+              <option value="Dr. Alka Saini">Dr. Alka Saini</option>
+              <option value="Dr. T.H. Faruqi">Dr. T.H. Faruqi</option>
               {/* Add more options as needed */}
             </select>
             {formErrors.doctor && (
@@ -312,8 +328,9 @@ const ConsultationBookingForm = () => {
           </div>
 
           <button
+            
             type="submit"
-            className="inline-block  text-white bg-customColor hover:bg-lightCustomColor py-2 px-4 rounded-md shadow-md"
+            className={`inline-block disabled:${loading} text-white bg-customColor hover:bg-lightCustomColor py-2 px-4 rounded-md shadow-md`}
           >
             Book Consultation
           </button>
