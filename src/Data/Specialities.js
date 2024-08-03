@@ -36,6 +36,7 @@ const specialities = [
       Item: "Renal Care",
       nav: "renal-care",
     },
+   
 ];
   
 export default specialities

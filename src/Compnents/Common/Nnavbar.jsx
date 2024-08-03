@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import logo from "../../Images/fahLogo.png";
+// import logo from "../../Images/fahLogo.png";
 import fullLogo from "../../Images/fullLogo.png";
 import { BiMessageAltEdit } from "react-icons/bi";
 import { HiOutlinePhoneMissedCall } from "react-icons/hi";
@@ -39,10 +39,10 @@ const Nnavbar = () => {
   return (
     <div
       ref={navbarRef}
-      className="relative flex bg-slate-200 flex-col lg:flex-row justify-between px-4 py-1 items-center box-border"
+      className="relative flex bg-slate-200 flex-col lg:flex-row justify-between px-1 lg:px-4 py-1 items-center box-border"
     >
       {/* Logo and Menu Button */}
-      <div className="flex justify-between w-full lg:w-auto px-4 lg:px-0">
+      <div className="flex justify-between w-full lg:w-auto ">
         <Link className=" flex justify-center" to="/">
           <img
             src={fullLogo}
@@ -100,7 +100,7 @@ const Nnavbar = () => {
                     key={subIndex}
                     className="flex justify-left gap-2 items-center bg-white rounded-md hover:text-black px-4 py-2 border-b"
                   >
-                    <img src={subItem.image} className=" " width={35} alt="" />
+                    <img src={subItem?.image} className=" " width={35} alt="" />
                     <p
                       className=" "
                       // href={subItem.nav}`
@@ -118,7 +118,7 @@ const Nnavbar = () => {
                     key={subIndex}
                     className="flex justify-left gap-2 items-center bg-wheat hover:bg-lightShade rounded-md px-4 py-2 border-b"
                   >
-                    <img src={subItem.image} className=" " width={35} alt="" />
+                    <img src={subItem?.image} className=" " width={35} alt="" />
                     <p
                       className=" "
                       // href={subItem.nav}

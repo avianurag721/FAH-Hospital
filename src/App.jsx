@@ -20,6 +20,7 @@ import Nnavbar from "./Compnents/Common/Nnavbar";
 import HealthCheckUp from "./Compnents/ConsultToggleDetailPages/HealthCheckUp";
 import TransitionWrapper from "./Config/TransitionConfig/TransitionWrapper";
 import ScrollToTop from "./Config/TransitionConfig/ScrollToTop";
+import AllSpecilities from "./Compnents/Pages/AllSpecilities";
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
       <TransitionWrapper>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/all-services" element={<AllSpecilities />} />
           <Route path="/second-opinion" element={<SecondOpinion />} />
           <Route path="/health-check" element={<HealthCheckUp />} />
           <Route path="/home-care" element={<HomeCare />} />

@@ -40,10 +40,10 @@ const AllDoctors = () => {
         />
         <div className="flex flex-col w-[90%]">
           <h3 className="text-2xl font-bold">{doctor.name}</h3>
-          <p className="text-slate-500">{doctor.specialization}</p>
+          <p className="text-slate-500">Consultant {doctor.specialization}</p>
           <p className="text-slate-500">
             <span className="text-headingColor">Department: </span>
-            {doctor.Specialization ? doctor.specialization : "NA"}
+            {doctor.department ? doctor.department : "NA"}
           </p>
         </div>
         <div className="flex gap-2 lg:gap-0 flex-col lg:flex-row justify-around w-[90%] my-2">
@@ -65,7 +65,7 @@ const AllDoctors = () => {
   };
 
   return (
-    <div className="flex h-fit flex-col font-garamond justify-center bg-gradient-to-b from-lightCustomColor to-lightShade">
+    <div className="flex h-fit flex-col font-garamond justify-center bg-lightCustomColor">
       <h1 className="capitalize mx-auto text-white text-3xl font-bold px-4 py-6">
         OUR DOCTORS
       </h1>

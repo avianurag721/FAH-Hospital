@@ -140,12 +140,12 @@ const Speciality = () => {
             </Link>
           );
         })}
-        <div className=" cursor-pointer group text-center    flex pt-16 gap-3 items-center">
+        <Link to="/all-services" className=" cursor-pointer group text-center    flex pt-16 gap-3 items-center">
           <p className=" ">View All Specialities</p>
           <p className=" group-hover:translate-x-4 transition-all duration-300 text-customColor text-lg">
             <FaArrowCircleRight />
           </p>
-        </div>
+        </Link>
       </div>
       {/* <div
         id="services"
@@ -184,20 +184,20 @@ const Speciality = () => {
         </div>
         <div className=" flex justify-center my-5 gap-1 flex-wrap">
           {alphabets.map((item, index) => (
-            <p
+            <Link to="book-appointment"
               key={index}
               className=" cursor-pointer flex justify-center  p-4 w-16 hover:bg-customColor hover:text-white  rounded-full bg-white border"
             >
               {item.alphabet}{" "}
-            </p>
+            </Link>
           ))}
         </div>
-        <div className=" cursor-pointer group w-full lg:w-[60%]  flex  gap-3 items-center">
+        <Link to="/all-services" className=" cursor-pointer group w-full lg:w-[60%]  flex  gap-3 items-center">
           <p>View All Ailments</p>
           <p className=" group-hover:translate-x-4 transition-all duration-300 text-customColor text-lg">
             <FaArrowCircleRight />
           </p>
-        </div>
+        </Link>
       </div>
     </div>
   );

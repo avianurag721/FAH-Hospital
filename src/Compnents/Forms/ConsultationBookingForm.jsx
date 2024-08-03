@@ -129,9 +129,9 @@ const ConsultationBookingForm = () => {
     return valid;
   };
 
-  if (loading) {
-    return ( <p className=" w-full h-[100vh] bg-customColor  flex justify-center items-center text-2xl font-garamond">Loading...</p> )
-  }
+  // if (loading) {
+  //   return ( <p className=" w-full h-[100vh] bg-customColor  flex justify-center items-center text-2xl font-garamond">Loading...</p> )
+  // }
 
   return (
     <div
@@ -328,11 +328,11 @@ const ConsultationBookingForm = () => {
           </div>
 
           <button
-            
+            disabled={loading}
             type="submit"
-            className={`inline-block disabled:${loading} text-white bg-customColor hover:bg-lightCustomColor py-2 px-4 rounded-md shadow-md`}
+            className={`inline-block  text-white bg-customColor hover:bg-lightCustomColor py-2 px-4 rounded-md shadow-md`}
           >
-            Book Consultation
+           {loading?"Submitting ":"Book Consultation"} 
           </button>
         </form>
       </div>

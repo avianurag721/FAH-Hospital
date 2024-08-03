@@ -9,7 +9,7 @@ import healtcheck from "../Images/services/ServicesLogos/HealthCheckup.png"
 const NavbarservicesData = [
   {
     Item: "Health Care",
-    nav: "",
+    nav: "/contact-us",
     image: HealthCare,
   },
   {

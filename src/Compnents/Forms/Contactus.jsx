@@ -5,10 +5,11 @@ import { BiSolidMessageDetail } from "react-icons/bi";
 import { MdAddIcCall } from "react-icons/md";
 import { apiConnector } from "../../Services/connector";
 import { endpoints } from "../../Services/apis";
-
+import Loader from "../Loader";
 const { CONTACT_US } = endpoints;
 
 const ContactUs = () => {
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -35,6 +36,7 @@ const ContactUs = () => {
     e.preventDefault();
     if (validateForm()) {
       try {
+        setLoading(true);
         const response = await apiConnector("POST", CONTACT_US, formData);
         console.log("Form data sent:", response.data);
         // Reset form after submission
@@ -50,9 +52,11 @@ const ContactUs = () => {
           phone: "",
           message: "",
         });
+        setLoading(false);
         alert("Form Submitted Successfully");
       } catch (error) {
         console.error("Error sending form data:", error);
+        setLoading(false);
       }
     }
   };
@@ -90,8 +94,12 @@ const ContactUs = () => {
     }
 
     setFormErrors(errors);
+    setLoading(false);
     return valid;
   };
+  // if (loading) {
+  //   return;
+  // }
 
   return (
     <div>
@@ -176,7 +184,9 @@ const ContactUs = () => {
               required
             />
             {formErrors.email && (
-              <p className="text-xs text-customColor mt-1">{formErrors.email}</p>
+              <p className="text-xs text-customColor mt-1">
+                {formErrors.email}
+              </p>
             )}
           </div>
           <div className="mb-4">
@@ -198,7 +208,9 @@ const ContactUs = () => {
               required
             />
             {formErrors.phone && (
-              <p className="text-xs text-customColor mt-1">{formErrors.phone}</p>
+              <p className="text-xs text-customColor mt-1">
+                {formErrors.phone}
+              </p>
             )}
           </div>
           <div className="mb-4">
@@ -220,7 +232,9 @@ const ContactUs = () => {
               required
             />
             {formErrors.message && (
-              <p className="text-xs text-customColor mt-1">{formErrors.message}</p>
+              <p className="text-xs text-customColor mt-1">
+                {formErrors.message}
+              </p>
             )}
           </div>
           <div className="flex items-center justify-between">
@@ -228,11 +242,12 @@ const ContactUs = () => {
               className="w-full p-2 mt-6 mx-10 font-garamond text-white text-2xl hover:bg-lightCustomColor hover:scale-95 transition-all duration-200 bg-customColor rounded-md text-center"
               type="submit"
             >
-              Send
+             {loading?<Loader /> :"Send"} 
             </button>
           </div>
         </form>
       </div>
+
       <Footer />
     </div>
   );

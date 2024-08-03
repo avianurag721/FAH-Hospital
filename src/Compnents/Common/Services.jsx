@@ -30,7 +30,7 @@ const Services = () => {
       id="services"
       className="  w-full font-garamond flex bg-lightShade gap-3 flex-col justify-center items-center py-4"
     >
-      <h1 className=" font-bold text-4xl mb-4 "> Services</h1>
+      <h1 className=" font-bold text-4xl mb-4 text-slate-700 "> Services</h1>
       <div className="  flex flex-col lg:flex-row gap-3 justify-around items-center">
         {servicesData.map((item, index) => (
           <ServiceCard key={index} service={item} />

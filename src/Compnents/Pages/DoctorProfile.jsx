@@ -30,22 +30,30 @@ const DoctorProfile = () => {
   }, [id]);
 
   if (loading) {
-    return <p className="w-full h-full flex justify-center items-center">Loading...</p>;
+    return (
+      <p className="w-full h-full flex justify-center items-center">
+        Loading...
+      </p>
+    );
   }
 
   if (!doctor) {
-    return <p className="w-full h-full flex justify-center items-center">No doctor found</p>;
+    return (
+      <p className="w-full h-full flex justify-center items-center">
+        No doctor found
+      </p>
+    );
   }
 
   return (
     <div className="w-full bg-green-100 ">
       <div className="flex justify-center mx-auto items-center flex-col w-[98%] my-2 lg:my-0 lg:w-[90%]">
-        <h1 className="text-4xl font-serif my-4">Doctor's profile</h1>
+        <h1 className="text-4xl font-serif my-4">{`${doctor?.name}'s Profile`}</h1>
         <div className=" w-full flex  flex-col lg:flex-row justify-around items-center gap-5">
           {/* image of doctor */}
           <img
             src={doctor?.image || img2}
-            className="w-[90%] lg:w-[40%]"
+            className="w-[90%]  lg:w-[40%]"
             alt={doctor?.name}
           />
           {/* info of doctor */}
@@ -66,28 +74,36 @@ const DoctorProfile = () => {
                 <p className="text-lg font-serif">Department: </p>{" "}
                 {doctor?.department}
               </div>
-              <div className=" flex  items-center gap-2">
-                <p className="text-lg font-serif">Consultation fees: </p>{" "}
-                {doctor?.consultationFees}
-              </div>
+
               <div className=" flex items-center gap-2">
                 <p className="text-lg font-serif">Contact No:- </p>{" "}
                 {doctor?.phone}
               </div>
-              <div className=" flex items-center gap-2">
+              {/* <div className=" flex items-center gap-2">
                 <p className="text-lg font-serif">E-mail:- </p>{" "}
                 {doctor?.email}
-              </div>
+              </div> */}
             </div>
             <Link
               to="/book-appointment"
-              className="mt-8 py-2 px-4 w-full lg:w-[50%] text-center font-garamond font-bold transition-all duration-300 rounded-md bg-customColor hover:bg-lightCustomColor hover:text-white"
+              className="mt-8 py-2 px-4 w-full lg:w-[50%] text-center font-garamond font-bold transition-all duration-300 rounded-md bg-customColor hover:bg-lightCustomColor text-white"
             >
               Book a Consultation
             </Link>
           </div>
         </div>
-        <p className=" my-4 w-full lg:w-[60%]"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque facilis culpa exercitationem libero doloribus illum incidunt id alias natus ipsam! Doloremque maxime dolores accusantium ab. </p>
+        <p className=" my-4 text-lg w-full lg:w-[60%]">
+          Experienced in all types of gynecological surgeries, including
+          abdominal and vaginal hysterectomies, tubal recanalization,
+          vaginoplasty, ovarian tumors, and others. Expertise in all
+          laparoscopic gynecological surgeries, such as total laparoscopic
+          hysterectomy, laparoscopic cystectomy, ectopic resection, and
+          infertility-related diagnostic laparoscopic and hysteroscopic
+          procedures. Special field of interest and excellence is in high-risk
+          obstetrics and reproductive medicine. Active participant in the PPH
+          bundle project (ESM-UBT) and provided training in PHCs and CHCs for
+          the management of PPH.
+        </p>
       </div>
       <Footer />
     </div>
