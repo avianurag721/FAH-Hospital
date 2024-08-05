@@ -1,4 +1,5 @@
-const BASE_URL = "http://localhost:4000/fah/v1";
+// const BASE_URL = "http://localhost:4000/fah/v1";
+const BASE_URL = "https://fah-backend.onrender.com/fah/v1";
 
 export const endpoints = {
   //   CREATE_DOCTOR: BASE_URL + "/createdoctor",   not needed in this frontend it only needed in admin panel
